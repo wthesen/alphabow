@@ -1,0 +1,1834 @@
+Directive 077 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) i 
+Release date: November 15, 2023 
+Effective date: November 15, 2023 
+Replaces previous edition issued December 22, 2011 
+Pipelines – Requirements and Reference Tools 
+Contents 
+1 Introduction  ............................................................................................................................................ 1 
+1.1 Purpose of This Directive .............................................................................................................. 1 
+1.2 AER Requirements ....................................................................................................................... 1 
+1.3 What’s New in This Edition ........................................................................................................... 1 
+1.4 How to Use This Directive ............................................................................................................ 2 
+2 External Corrosion Prevention Coatings Under Pipeline Insulation ....................................................... 3 
+2.1 CSA Z662 Requirements .............................................................................................................. 3 
+2.2 Exemption for Elevated-Temperature Pipelines ........................................................................... 4 
+3 High-Performance High-Density Polyethylene Pipe in Oil and Gas Service .......................................... 4 
+4 Overpressure Protection for Pipelines Connected to Artificial Lift Equipment ....................................... 4 
+5 Pipeline Pressure Testing Using Liquid Test Media Other Than Fresh Water ...................................... 6 
+6 Pipeline Pressure Testing Using Gaseous Test Media .......................................................................... 7 
+7 Temporary Surface Pipelines for Well Testing or Bypass ...................................................................... 9 
+8 Temporary Surface Pipelines for Water Conveyance .......................................................................... 10 
+8.1 Approval and Notification Process .............................................................................................. 11 
+8.1.1 Group 1 TSPW Deployment Notification ........................................................................ 12 
+8.1.2 Group 2 and 3 TSPW Approval ...................................................................................... 12 
+8.1.3 Group 2 and 3 TSPW Deployment Notification .............................................................. 12 
+8.1.4 TSPW Route Map........................................................................................................... 13 
+8.2 Extension Requests and Amendments....................................................................................... 13 
+8.3 Landowner Consent and Notification .......................................................................................... 14 
+Alberta Energy Regulator 
+ 
+ii Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+8.4 Documentation Requirements .................................................................................................... 14 
+8.5 Technical Requirements ............................................................................................................. 14 
+8.5.1 Route Selection and TSPW Placement.......................................................................... 14 
+8.5.2 Materials ......................................................................................................................... 16 
+8.5.3 Deployment .................................................................................................................... 16 
+8.5.4 Commissioning ............................................................................................................... 18 
+8.5.5 Operations ...................................................................................................................... 19 
+8.5.6 Operations Surveillance ................................................................................................. 20 
+8.5.7 Incident Response and Reporting .................................................................................. 21 
+8.5.8 End of Operations........................................................................................................... 22 
+9 Elevated-Temperature Pipelines .......................................................................................................... 23 
+9.1 Introduction ................................................................................................................................. 23 
+9.2 Exemptions ................................................................................................................................. 24 
+9.3 Application for a Pipeline Licence ............................................................................................... 25 
+9.4 Field Construction and Inspection .............................................................................................. 25 
+9.5 Pressure Testing ......................................................................................................................... 25 
+9.6 Operations .................................................................................................................................. 26 
+9.7 Failure Investigation .................................................................................................................... 26 
+9.8 Changes to Registered Designs and Pipeline Licence............................................................... 26 
+10 Comingling of Oil and Gas in a Single Pipeline .................................................................................... 27 
+10.1 Introduction ................................................................................................................................. 27 
+10.2 Criteria for Pipeline Licensing of Commingled Production ......................................................... 27 
+Appendix 1 Definitions ......................................................................................................................... 29 
+Appendix 2 Interpretation of Jurisdictional Relationships for the Design of Pipelines, Pressure 
+Equipment, and Pressure Piping .......................................................................................................... 31 
+Appendix 3 Jurisdictional Interpretation for Elevated-Temperature Pipelines ..................................... 49 
+ 
+Figure 1. Steel pipe lengths for 125 m3 volume ........................................................................................ 8 
+  
+Table 1. Water groups for TSPW conveyance ...................................................................................... 11 
+ 
+  
+ 
+Abbreviations 
+Alberta Energy Regulator 
+ABSA 
+AER 
+ASME 
+ASTM 
+CRN 
+GOR 
+HDPE 
+MOP 
+Alberta Boilers Safety Association 
+Alberta Energy Regulator 
+American Society of Mechanical Engineers 
+American Society for Testing and Materials 
+Canadian Registration Number 
+gas-oil ratio 
+high-density polyethylene 
+maximum operating pressure 
+OGCA Oil and Gas Conservation Act 
+OGCR Oil and Gas Conservation Rules 
+PESR Pressure Equipment Safety Regulation 
+SCA 
+TSP 
+TSPW 
+Safety Codes Act 
+temporary surface pipeline 
+TSPs for water conveyance 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 3 
+
+Alberta Energy Regulator 
+1 
+Introduction 
+1.1 
+Purpose of This Directive 
+Directive 077: Pipelines – Requirements and Reference Tools was first published in 2011 and 
+amalgamated information about pipelines into one directive. This information previously resided in 
+other Alberta Energy Regulator (AER) directives, informational letters (ILs), interpretive 
+documents, and reference tools. 
+This directive provides testing and operational requirements for ensuring pipelines, including 
+temporary pipelines, are operated safely and in accordance with regulations and industry standards. 
+In this directive, defined terms are set in boldface at first use, and the definitions are provided 
+in appendix 1. 
+1.2 
+AER Requirements 
+Following AER requirements is mandatory for the responsible duty holder as specified in 
+legislation (e.g., licensee, operator, company, applicant, approval holder, or permit holder). The 
+term “must” indicates a requirement, while terms such as “should,” “recommends,” and “expects” 
+indicate a recommended practice. 
+Each AER requirement that is unique to this directive is numbered. 
+Information on compliance and enforcement can be found on the AER website. 
+1.3 
+What’s New in This Edition 
+Based on revisions to the Pipeline Rules, some detail has been moved from the rules to 
+Directive 077 to better accommodate the technical explanation required. In addition, the directive 
+has been updated to reflect changes to the CSA standard CSA Z662: Oil and gas pipeline systems 
+(latest edition). 
+Changes have been made to the directive to improve its overall clarity; other specific changes 
+include the following: 
+• Restored corrosion barrier requirements because CSA Z662 no longer requires mandatory 
+corrosion barriers under insulation. 
+• Specified responsibility for overpressure protection where more than one licensee is involved. 
+• Revised the 21-day temporary surface pipeline (TSP) requirements to allow use for 
+bypass situations. 
+• Clarified the test period and expectations for TSP application and site restoration. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 1 
+Alberta Energy Regulator 
+• Added a new section for water transfer by TSPs outlining the approval process and use of TSPs 
+to transfer large volumes of water, such as for well fracturing. 
+• Removed International Organization for Standardization (ISO) standards of design for 
+high-performance bimodal high-density polyethylene (HDPE) pipe. 
+• Revised pressure testing requirements for gaseous media and the need for an engineering 
+assessment to approve large test volumes. 
+• Adjusted the limits for overpressure protection to agree with those in CSA Z662. 
+• Moved interpretation and guidelines information into the appendices with reworked 
+explanations, tables, and diagrams. 
+• Added a new section, “Commingling of Oil and Gas in a Single Pipeline,” to clarify the 
+circumstances when it may be possible to license pipelines for commingled production. 
+• Added the following new forms: 
+− Pipeline Pressure Testing Using Liquid Test Media Other Than Fresh Water 
+− Pipeline Pressure Testing Using Gaseous Test Media 
+− Temporary Surface Pipeline for Well Testing or Bypass 
+− TSPW Group 1 Water Notice of Deployment 
+− TSPW Group 2/3 Water Approval Request 
+− TSPW Group 2/3 Water Notice of Deployment 
+− TSPW Group 1/2/3 Water Amendment 
+− TSPW Operations Summary 
+• Made all forms available in OneStop. 
+1.4 
+How to Use This Directive 
+This directive refers to specific clauses of CSA Z662 and sections of the Pipeline Rules. Future 
+amendments to either document may result in those references changing. The reader is advised that, 
+in such cases, the applicable succeeding clause or section applies. 
+Appendix 2 provides an interpretation of the relationship between various regulatory instruments 
+and industry standards concerning pipeline design. 
+All forms referenced in this directive are available in OneStop. 
+Contact the AER Regulatory Applications Branch by email at pipelineoperations@aer.ca for 
+questions regarding this directive. 
+2 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+2 
+Alberta Energy Regulator 
+External Corrosion Prevention Coatings Under Pipeline Insulation 
+2.1 
+CSA Z662 Requirements 
+Clause 9 of CSA Z662 requires an external corrosion prevention coating for steel pipelines that 
+are buried, submerged, or exposed to the environment. However, CSA Z662 is not specific on 
+whether insulation systems are considered a corrosion prevention coating. For buried pipelines, the 
+insulation system is exposed to subsurface water and aboveground pipelines are exposed to 
+precipitation and physical damage. Both are subject to water ingress, which can result in corrosion 
+under insulation. Corrosion under insulation can also occur on elevated-temperature pipelines when 
+they are not in service or when trapped water cannot escape from water-saturated insulation. 
+Therefore, the AER concludes that common insulation systems are not considered effective 
+corrosion prevention coatings. Consequently, new or modified steel pipelines, other than elevated
+temperature pipelines registered with ABSA in accordance with section 9 of Directive 077, must 
+have a corrosion prevention coating as described in clause 9 of CSA Z662 applied directly to the 
+steel pipe. 
+1) Unless otherwise authorized by the AER, an applicant for a licence for a new or modified 
+insulated pipeline that is buried, submerged, on surface racking, or temporarily laid on the 
+ground must ensure a corrosion prevention coating is applied directly to the surface of the 
+steel pipe. 
+The AER recognizes that the high operating temperature of some pipelines may exceed the 
+operating range of some corrosion prevention coatings or that cases might occur where a corrosion 
+prevention coating is not appropriate. Applicants may use alternative corrosion prevention 
+systems once the AER has approved an exemption. 
+2) To request an exemption from requirement 1, a licensee must submit the following to the AER 
+at pipelineoperations@aer.ca: 
+a) An engineering assessment that demonstrates to the satisfaction of the AER that the 
+insulation and the alternate corrosion prevention system will provide effective long-term 
+corrosion control. 
+b) A description of the methods and actions in the integrity management program used to 
+monitor for corrosion or cracking under insulation and respond to any concerns. 
+3) The integrity management program referenced in requirement 2 must include measures for 
+monitoring potential stress-corrosion cracking that may occur under wet insulation. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 3 
+Alberta Energy Regulator 
+For more information on corrosion control for steel pipelines, see: 
+• Bulletin 2021-36, Stress-Corrosion Cracking on Insulated High-Temperature Pipelines 
+• CSA Z662: Oil and gas pipeline systems, clause 14.6 
+• CSA Z245.22: Plant-applied external polyurethane foam insulation coating for steel pipe 
+2.2 
+Exemption for Elevated-Temperature Pipelines 
+Elevated-temperature pipelines registered with ABSA in accordance with section 9 of Directive 077 
+must be managed in accordance with an ABSA-approved pressure equipment integrity management 
+system, as noted in section 9.6 of Directive 077. 
+Requirement 1, corrosion prevention coating for an insulated pipeline, does not apply to ABSA
+registered elevated-temperature pipelines. However, licensees of such pipelines should consider the 
+potential for corrosion under insulation and stress-corrosion cracking. 
+3 
+4 
+High-Performance High-Density Polyethylene Pipe in Oil and Gas Service 
+The previous edition of Directive 077 included a process for using high-performance bimodal 
+HDPE pipe in oil and gas service. This type of pipe required design using ISO standards rather than 
+the more familiar American Society for Testing and Materials (ASTM) design standards adopted by 
+CSA Z662. The ASTM standards have since been revised to include this class of HDPE material. 
+Changes to clause 13.3 of CSA Z662 now recognize the ASTM changes and allow for the use of 
+higher-performance polyethylene pipe designated as type 4710. Because this change serves the 
+industry’s needs, the section on ISO design has been removed from Directive 077. Amendments or 
+additions to existing licences of HDPE pipe installed using ISO methodology are still permissible. 
+Overpressure Protection for Pipelines Connected to Artificial Lift Equipment 
+Unless otherwise authorized by the AER, clause 4.18 of CSA Z662 and section 31 of the Pipeline 
+Rules require both pressure control and overpressure protection systems for pipelines where a 
+source may overpressure the pipeline. 
+This section describes acceptable variations to the requirements for overpressure protection for 
+pipelines connected to artificial lift equipment (i.e., any method or device that enhances production 
+flow from the well). The accepted variations apply only to pipelines connected to artificial lift 
+equipment. All other pipelines must follow the requirements of CSA Z662. 
+4) Where artificial lift equipment is capable of supplying pressure exceeding the pipeline’s 
+maximum operating pressure (MOP), the licensee must implement one of the 
+following options: 
+4 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+a) Option 1: 
+Alberta Energy Regulator 
+i) 
+Use two independently operated overpressure protection devices designed to stop the 
+pressure from exceeding the licensed MOP. 
+ii) Ensure the first overpressure protection device will independently stop the pressure 
+from exceeding the licensed MOP, and the second overpressure protection device will 
+independently stop the pressure from exceeding the licensed MOP by more than 10% 
+or 35 kilopascals (kPa), whichever is greater, as described in CSA Z662. 
+iii) Inspect, assess, and test the devices in accordance with the requirements of CSA Z662 
+or, optionally, in accordance with a schedule developed and fully documented under 
+the licensee’s integrity management program. 
+b) Option 2: 
+i) 
+Use a single overpressure protection device designed to stop the pressure from 
+exceeding the licensed MOP. 
+ii) Ensure a competent individual conducts a monthly inspection and service test on the 
+single overpressure protection device. 
+iii) Have a certified instrumentation technician or equivalent inspect the single 
+overpressure protection device annually (but not more than 18 months between 
+inspections) to confirm the monthly inspections, assessments, and service testing were 
+correctly conducted and that the device is not defective or inoperative. 
+5) If any overpressure protection device is found to be defective or inoperative, the licensee must 
+stop operations of the pipeline and repair or replace the device before continuing with 
+operations. 
+6) For all overpressure protection devices, the licensee must 
+a) maintain logs of inspection, assessment, and tests in accordance with its integrity 
+management program and this requirement, and 
+b) provide those logs to the AER on request. 
+At locations where the pipeline licensee and well licensee are different, if not defined by an 
+agreement between the licensees, the pipeline licensee is responsible for ensuring the protection of 
+the pipeline from artificial lift equipment. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 5 
+Alberta Energy Regulator 
+5 
+Pipeline Pressure Testing Using Liquid Test Media Other Than Fresh Water 
+Hydrostatic pressure testing is used to qualify new pipeline construction or requalify an existing 
+pipeline by confirming the pipeline has the necessary strength and has no leaks. 
+Fresh water is the preferred medium for pressure testing pipelines due to its benign effects on the 
+environment should a leak occur. A freezing-point depressant, such as methanol or glycol, may be 
+added to prevent the water from freezing when temperatures are below freezing. 
+The use of normally transported pipeline fluids may be acceptable for pipeline pressure testing in 
+certain situations. It is recommended that these fluids should only be used when technical 
+considerations make the use of fresh water as the test media impractical or when the test pressure is 
+less than the MOP and is being monitored for a period to confirm leak tightness. 
+In addition to the requirements of this section, the licensee must apply the requirements for pressure 
+testing set out in clause 8 of CSA Z662 and Part 3 of the Pipeline Rules. 
+7) Where a licensee intends to test a pipeline using a liquid test medium other than fresh water, the 
+licensee must, before starting the pressure test, prepare a contingency plan as required under 
+clause 8.7.2 of CSA Z662 to protect the environment in the event of a release or spill of the 
+liquid test medium. 
+8) The licensee must provide a copy of its contingency plan to the AER on request. 
+9) In addition to requirement 7, if the pressure test meets any of the following criteria: 
+• the volume of the test section will exceed 500 cubic metres (m3), 
+• the hoop stress level during the pressure test will exceed 100% specified minimum yield 
+strength (SMYS), or 
+• the pipeline will cross or pass within 100 metres (m) of flowing water at the time of the 
+pressure test, 
+the licensee must, 
+a) before the start of pressure testing, ensure the contingency measures described in the 
+contingency plan are staged at the worksite and ready to respond to any release or spill of 
+the liquid test medium; 
+b) before starting the pressure test, notify the AER by submitting via OneStop a completed 
+Pipeline Pressure Testing Using Liquid Test Media Other Than Fresh Water form at least 
+48 hours in advance; 
+c) have a copy of the completed form at the test location during pressure testing; and 
+6 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+d) keep a record of the completed form in accordance with the requirements of the licensee’s 
+Safety And Loss Management System and integrity management program. 
+10)  If any information from requirement 9 changes, the licensee must notify the AER via OneStop 
+of the change and also resubmit the form (Pipeline Pressure Testing Using Liquid Test Media 
+Other than Fresh Water) via OneStop as soon as possible. 
+6 
+Pipeline Pressure Testing Using Gaseous Test Media 
+Hydrostatic pressure testing is used to qualify new pipeline construction or requalify an existing 
+pipeline by confirming the pipeline has the necessary strength and is leak tight. 
+Fresh water is the preferred medium for pressure testing pipelines due to its incompressibility and 
+benign effects on the environment should a leak occur. In specific circumstances, it may be 
+necessary or advantageous to use air or other gaseous media as an alternative to water. 
+However, the compressibility of gaseous test media can result in difficulties in interpreting the leak 
+tightness of a pipeline. Minor leaks may be masked by the compressibility of the test medium. For 
+this reason, limitations are placed on the volume of test sections, and test durations are extended to 
+give more time for a leak to become apparent. It may be possible to conduct gaseous media tests on 
+larger test volumes as described in the following requirements. Accordingly, the licensee must first 
+complete an engineering assessment that evaluates the compressibility of the media and the 
+sensitivity of the test to establish a satisfactory test duration that would enable the successful 
+determination of leak tightness. 
+Pressure tests using gaseous media present a higher risk to personnel and property near the pipeline. 
+A test failure may result in violent releases of stored energy. For this reason, additional safety 
+precautions must be used. Licensees considering the use of gaseous media pressure tests must 
+follow the pertinent parts of CSA Z662 and Part 3 of the Pipeline Rules. Gaseous media testing is 
+strongly discouraged in densely populated areas or for testing pipelines that have been in service. 
+The conditions described below must be met to use gaseous test media, including limitations on the 
+pipeline pressure and allowable stresses. 
+AER Directive 060: Upstream Petroleum Industry Flaring, Incinerating, and Venting places 
+restrictions on the amount of natural gas to be flared or vented and imposes public notification 
+guidelines for flaring of gas used as a test medium. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 7 
+Alberta Energy Regulator 
+11) The licensee must notify the AER via OneStop at least 48 hours before the start of a gaseous 
+media pressure test. 
+The AER may stop or prohibit a gaseous media pressure test if it believes the test might be 
+inappropriate or constitute a safety hazard to personnel or the public. Testing may proceed once 
+any concerns have been satisfactorily resolved. 
+The AER recommends that licensees limit test segments to volumes of 125 m3 or less to enable 
+successful leak detection when tested over a 24-hour period. 
+12) For test volumes greater than 125 m3, licensees must follow note 2 of clause 8.7.5.3 of 
+CSA Z662 and consider the effect of gas compressibility when determining the length of the test 
+section and the duration of the test needed for successful detection of small leaks. 
+13) Before conducting a gaseous media test using volumes greater than 125 m3, the licensee must 
+notify the AER by submitting via OneStop a completed Pipeline Pressure Testing Using 
+Gaseous Test Media form at least 48 hours in advance and include an engineering assessment 
+in consideration of the test volume that demonstrates that the proposed testing procedure and 
+duration are safe and will successfully detect a small leak. 
+Figure 1 shows the approximate pipeline lengths for steel pipelines of different diameters that result 
+in volumes of 125 m3. Licensees should use the actual measurements of the pipeline to calculate the 
+volume accurately. 
+Figure 1. 
+Steel pipe lengths for 125 m3 volume 
+14) The licensee must use high-resolution (i.e., better than 1%) pressure measurement instruments 
+to detect minor pressure losses while testing. 
+15) The licensee must maintain a hold period sufficient to allow the pipeline to fully stabilize after 
+pressurization before beginning the 24-hour test period. 
+16) The licensee must continuously monitor the pipeline’s ambient temperature and internal test 
+section temperature during the test to allow reconciliation against pressure changes. 
+The licensee may consider additional techniques to assist in leak detection, such as using an 
+odorant, gas detectors, ultrasonic leak detectors, thermography, and trained animal detectors. 
+8 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+7 
+Alberta Energy Regulator 
+Temporary Surface Pipelines for Well Testing or Bypass 
+This section addresses the process for obtaining approval for a TSP for well testing or as a bypass. 
+Such approvals are valid for 21 consecutive days beginning the first day of the temporary flow (i.e., 
+in service) and expiring at midnight of the 21st day. Temporary interruptions of service will not 
+extend the 21-day period. 
+The AER may consider an extension beyond 21 days in extenuating circumstances for a critical 
+bypass. 
+Use of a surface pipeline as a production pipeline is not allowed except where the licensee applies 
+under Directive 056: Energy Development Applications and Schedules for a surface pipeline, which 
+may be licensed for up to one year. 
+See section 8 of this directive for the requirements for TSPs conveying water. 
+17) A duty holder intending to install and operate a TSP for well testing or bypass must obtain 
+written AER approval before the construction or deployment of the pipeline. 
+18) To request approval from the AER, the duty holder must 
+a) complete the Temporary Surface Pipeline for Well Testing or Bypass form and submit the 
+form to the AER via OneStop and, 
+b) if requested, submit to the AER information that supports the statements made in the form. 
+If a duty holder indicates “no” to any item on the form, the request will require further technical 
+evaluation. Duty holders should include with the form an explanation for any “no” response 
+and supporting evidence well before the intended pipeline construction date to ensure the AER 
+has sufficient time to evaluate the application. 
+Upon completing any technical evaluation, the AER field office will provide a disposition 
+concerning the request. 
+If the public involvement requirements cannot be met, the TSP for well testing or bypass 
+approval process described in this directive cannot be used, and a Directive 056 pipeline licence 
+must be obtained. 
+19) The duty holder must keep a copy of the form and the AER’s consent at the pipeline location 
+during installation through to remediation and reclamation of the pipeline right-of-way. 
+20) A duty holder that has installed a TSP under the 21-day approval process must 
+a) remove it within 30 calendar days of the expiry of the approval and 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 9 
+Alberta Energy Regulator 
+b) remediate and reclaim the pipeline right-of-way within 60 calendar days of the expiry of 
+the approval. 
+If necessary, contact the AER field office that issued the approval to request more time to 
+remediate and reclaim the pipeline right-of-way. 
+Duty holders proposing to use a TSP for well testing or bypass must comply with the requirements 
+in sections 25 and 30(2)(4) of the Pipeline Rules for surface pipelines, despite these TSPs not 
+being licensed. 
+Duty holders proposing to use a TSP for well testing or bypass must comply with the requirements 
+of CSA Z662, including the sour service requirements specified in clause 16. 
+8 
+Temporary Surface Pipelines for Water Conveyance 
+This section addresses the authorization process and technical requirements for TSPs for water 
+conveyance (TSPW) as defined in the Pipeline Rules, which are used to convey water to support 
+energy development (e.g., well drilling, well completion, hydrostatic testing). The goals of the 
+requirements are to ensure that no water conveyed through a TSPW is inadvertently released and 
+the risk to public safety and the environment remains low for all uses of TSPWs. 
+A TSPW may 
+• convey only water or water-based liquids (see table 1 for water groups), 
+• operate at a pressure of no more than 3500 kPa, 
+• be deployed for a defined period not exceeding 12 months (unless approved for an extension of 
+up to 12 months), and 
+• be mostly on the ground surface; however, portions of the TSPW may be elevated, buried, or 
+otherwise covered (e.g., for crossing waters or roadways). 
+If a TSPW is intended to be deployed for more than 24 months from the date of deployment, the 
+AER recommends constructing a permanent pipeline. 
+The regulatory requirements for conveying water through TSPWs are proportional to their potential 
+effect on public safety and the environment. Table 1 lists the permissible water groups for a TSPW. 
+Mixtures of water from different groups (in any proportion) are classified as the highest-numbered 
+group within the mix. Mixing of water groups must comply with applicable Government of Alberta 
+policies and regulations. 
+21) If a mixture of water groups is to be conveyed, the duty holder must know the chemical 
+composition of the mixture. 
+10 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+Water containing constituents at levels that could be an immediate human health hazard if released 
+is prohibited from being conveyed through a TSPW, including water with extreme pH (i.e., ≤2 or 
+≥11.5) or water with unsafe levels of hydrogen sulphide (H2S), naturally occurring radioactive 
+materials, or flammable or explosive constituents. 
+Table 1. Water groups for TSPW conveyance 
+Water 
+group 
+Description 
+Criteria 
+1 
+Water with a negligible effect on 
+the environment or public safety if 
+released. 
+Group 1 water comprises nonsaline surface water 
+and nonsaline groundwater that meets the following 
+criteria: 
+• chloride content of no more than 500 milligrams 
+per litre 
+• electrical conductivity of no more than 
+2.0 decisiemens per metre  
+• pH between 6.0 and 9.0 
+• no hydrocarbon sheen 
+• does not contain municipal wastewater, water 
+affected by an industrial process, or produced or 
+process water from an oil or gas activity 
+• has not had any chemical added before 
+conveyance in the TSPW 
+2 
+Water that may have an 
+environmental effect if released. 
+The effect is generally easily and 
+quickly reversible, and the risk to 
+public safety is negligible. 
+Group 2 water includes treated drinking water, final 
+treated municipal or industrial effluent, and nonsaline 
+surface water or nonsaline groundwater that does not 
+meet the criteria for group 1 or 3 water. 
+3 
+Water that will have an 
+environmental effect if released. 
+The effect is not generally easily 
+or quickly reversible, but the risk 
+to public safety is low. 
+Group 3 water includes saline groundwater, partially 
+or untreated municipal or industrial wastewater, 
+produced water, fracturing flowback water, liquid 
+oilfield wastewater, and other water that does not 
+meet the criteria for group 1 or 2 water. 
+8.1 
+Approval and Notification Process 
+In accordance with sections 7(3)(b) and 7(4) of the Pipeline Rules, TSPWs are exempt from 
+requiring a pipeline licence. However, approval from or notification to the AER is required 
+depending on the group of water conveyed. 
+22) Before submitting a notification for group 1 water or a request for approval for group 2 or 3 
+water, the duty holder must have consent from all landowners (including municipalities) and 
+occupants on whose property the TSPW will be deployed in accordance with requirement 35. 
+23) A duty holder must have prior approval from the AER to convey water from a higher-numbered 
+group through a TSPW authorized for a lower-numbered group. Use the TSPW Group 1/2/3 
+Water Amendment form to request this change. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 11 
+Alberta Energy Regulator 
+Once authorized to convey group 2 or 3 water, a TSPW may convey water from a lower-numbered 
+group. The TSPW must remain in compliance with the existing approval except for the 
+lower-numbered water group. 
+The TSPW duty holder may consent, through a private agreement, to share the TSPW with another 
+party. The original duty holder remains responsible for the TSPW and the required data collection, 
+incident response, and end-of-operation obligations. 
+24) If another duty holder seeks to assume responsibility for an existing deployed TSPW, they must 
+follow the approval or notification processes appropriate to the water group as outlined below. 
+In these cases, to ensure the deployment duration is not exceeded or changed, the duration of 
+deployment will be measured from the date the original duty holder deployed the TSPW. 
+Subsequent duty holders of existing TSPWs will be exempt from deployment and 
+commissioning requirements. The last duty holder for the TSPW will be responsible for 
+decommissioning the TSPW (section 8.5.8.1) and site restoration (section 8.5.8.2). 
+8.1.1 Group 1 TSPW Deployment Notification 
+25) A TSPW conveying group 1 water does not require AER approval. However, before starting 
+any field activities related to deploying and operating the TSPW, the duty holder must notify 
+the AER by submitting via OneStop a completed TSPW Group 1 Water Notice of Deployment 
+form at least 24 hours in advance (but not more than 14 business days). 
+8.1.2 Group 2 and 3 TSPW Approval 
+26) The duty holder must submit to the AER via OneStop a completed TSPW Group 2/3 Water 
+Approval Request form. 
+27) The duty holder must receive AER approval for TSPWs conveying group 2 or 3 water before 
+starting any field activities related to deploying and operating the TSPW. 
+28) The duty holder must identify and describe any requested deviations in the approval request 
+submitted and provide any associated documentation (e.g., material specifications) and a 
+justification for the requested deviation and associated mitigations. 
+Requests to deviate from the technical requirements contained in section 8.5 may be 
+considered. 
+8.1.3 Group 2 and 3 TSPW Deployment Notification 
+29) After receiving approval from the AER, but before starting any field activities related to 
+deploying and operating the TSPW, the duty holder must notify the AER by submitting via 
+OneStop a completed TSPW Group 2/3 Water Notice of Deployment form at least 24 hours in 
+advance (but not more than 14 business days). 
+12 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+8.1.4 TSPW Route Map 
+Alberta Energy Regulator 
+30)  All TSPW notifications or approval requests must include a route map at an appropriate scale. 
+Various digital formats for the map are acceptable (e.g., JPEG, PDF, PNG, TIF). 
+31) The route map must include the following: 
+a) the entire route of the TSPW and its start and end points, including all segments 
+b) location of TSPW equipment (e.g., water storage areas, pumps, valves, shutoff devices, 
+spill response materials) 
+c) location of all AER-regulated sites connected to the TSPW, with associated authorization 
+identifiers 
+d) points where the TSPW crosses roads, water bodies, trails, access points, etc., including 
+identification of any culverts the TSPW will pass through or dry ephemeral water bodies. 
+e) water bodies (including dry ephemeral water bodies), water wells, and sensitive receptors 
+within 50 m for group 1 and 2 TSPWs or within 100 m for group 3 TSPWs. 
+f) steep slopes, draws, and ravines along the TSPW route that may increase water movement 
+in the event of a release 
+g) land cover types (e.g., forest, pasture, agriculture, recreation) adjacent to the route 
+8.2 
+Extension Requests and Amendments 
+The 12-month term of a TSPW may be extended only once for up to 12 additional months. 
+32) The duty holder must submit a request via OneStop to amend the removal date by submitting a 
+completed TSPW Group 1/2/3 Water Amendment form at least seven business days before the 
+expiry of the original notification (for group 1 water) or the original approval (for group 2 or 3 
+water). 
+33) An extension request must include 
+a) the original notification reference number (for group 1 water TSPW) or approval number 
+(for group 2 or 3 water TSPW); 
+b) confirmation that land access permissions remain valid; 
+c) confirmation that the operation remains the same as originally notified (for group 1 water 
+TSPW), approved (for group 2 and 3 water TSPW), or amended (except for conveying a 
+lower-numbered group of water, which is permissible); and 
+d) an explanation of why the extension is needed. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 13 
+Alberta Energy Regulator 
+34) The duty holder must notify the AER via OneStop of changes in routing, use of different 
+materials (for group 2 and 3 TSPWs), deviations from commissioning procedures, changed 
+operating pressure (for group 2 and 3 TSPWs), or changes to the surveillance plan (for group 2 
+and 3 TSPWs) and also submit via OneStop a completed TSPW Group 1/2/3 Water 
+Amendment form before starting operations or within 48 hours if changes are made after the 
+start of operations. 
+8.3  
+Landowner Consent and Notification 
+35) The duty holder must obtain documented consent from the landowners, occupants, or entities in 
+the care and control of the lands on which the TSPW will be installed and provide those 
+documents to the AER on request. 
+36) The duty holder must notify landowners, occupants, or entities in the care and control of land 
+adjacent to the TSPW if it might hinder access to those lands. 
+8.4  
+Documentation Requirements 
+37) The duty holder must keep a copy of the TSPW notification submission (for group 1 water) or 
+TSPW approval (for group 2 or 3 water) on site during deployment through to 
+decommissioning and restoration of the TSPW route and provide it to the AER on request. 
+8.5  
+Technical Requirements 
+8.5.1 Route Selection and TSPW Placement 
+The goal is to install TSPWs in locations that pose minimal risk to public safety and the 
+environment during all phases of use, particularly in the event of a release of conveyed water. 
+The TSPW’s route should minimize the risk of environmental damage, including threats to the 
+quality of soils, surface water, groundwater, and the health of humans, animals, and plants during 
+the deployment, operation, and decommissioning of the TSPW. Routing of TSPWs is 
+recommended to avoid crossing water bodies as defined in Directive 056. 
+A TSPW and its associated equipment should be located as far as practicable from water bodies, 
+water wells, and sensitive receptors. Moreover, the statement applies specifically to a TSPW and 
+the associated equipment used to operate it (e.g., booster pumps), not the equipment like pumps 
+needed to access or divert water from the source. 
+The AER expects duty holders will minimize surface disturbance when installing and operating 
+a TSPW. 
+38) Unless otherwise authorized by the AER, where a TSPW route cannot avoid crossing a water 
+body, the duty holder must ensure the TSPW meets the following requirements: 
+14 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+a) The TSPW is elevated and supported above the highest water level expected during the 
+operation or is installed on a floating support system so that the duty holder may detect any 
+leaks. Existing bridges are preferred crossing points, with the permission of the relevant 
+bridge operator or owner. 
+b) If conveying group 2 water, there are no pipe connections within 10 m of the water body. If 
+this is not possible, the pipe connections must have devices or containment to collect and 
+contain any leakage or redirect it to an area where it can be contained. 
+c) If conveying group 3 water, secondary containment is placed along the TSPW, across and 
+extending 10 m on each side of the water body to redirect any water released away from the 
+water body to an area where it can be contained. 
+For group 1 and 2 TSPWs, if the water body is reasonably expected to remain frozen during the 
+time of deployment, operation, and removal (with ice of sufficient thickness to safely support the 
+water-filled TSPW and the personnel and equipment needed to operate it), the AER may consider 
+waiving requirement 38 if the duty holder provides an acceptable mitigation plan for potential 
+incidents specific to the ice crossing. 
+A TSPW may cross ephemeral water bodies that are reasonably expected to remain dry for the 
+entire duration of the TSPW’s deployment. 
+TSPWs may be deployed in man-made ditches that remain dry except during and immediately after 
+precipitation. Duty holders are reminded that roadway ditches are often direct pathways to surface 
+water bodies; appropriate surveillance and placement of spill mitigation equipment is an important 
+consideration in designing the surveillance program for TSPWs routed in ditches. 
+39) Unless the landowners, occupants, or entities in the care and control of the land previously 
+agree, the duty holder must deploy a TSPW so as not to materially impair 
+a) drainage (e.g., through drains, ditches, culverts, overland), 
+b) vehicle safety, 
+c) road and right-of-way maintenance (e.g., rutting that impairs vehicle safety, vegetation 
+control, snow removal), or 
+d) animal (domestic or wild) movement, feeding, or breeding. 
+40) The duty holder must take appropriate measures to maintain access to land adjacent to the 
+TSPW and protect the TSPW from damage or, if necessary, provide an alternative access point 
+acceptable to the landowners, occupants, or entities in the care and control of the land. 
+41) The duty holder must operate the TSPW in a manner that protects the public and the 
+environment and in accordance with this directive and the Pipeline Rules. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 15 
+Alberta Energy Regulator 
+The duty holder must comply with all applicable provisions as set out in section 2(4) of the 
+Pipeline Rules. 
+8.5.2 Materials 
+The goal is to construct TSPWs using materials that minimize the risk to public safety and the 
+environment from materials-related failures. 
+42) The duty holder must construct the TSPW using materials (e.g., pipe, gaskets, seals, pipe 
+connections) compatible with the water conveyed (e.g., chemical constituents) and the 
+operating conditions (e.g., weather, temperature, duration, MOP). 
+43) All TSPW materials and associated equipment must be maintained, installed, operated, and 
+stored in accordance with the manufacturer’s specifications and limitations. 
+44) Unless authorized by the AER, all pipe connections must be designed to prevent separation 
+caused by pipe vibration or movement or include other measures to prevent separation. 
+45) Unless authorized by the AER, all pipe connections must include suitable restraints to prevent 
+decoupled pipe ends from becoming a safety hazard in the event of failure. 
+8.5.3 Deployment 
+The goal is to deploy TSPWs and maintain the integrity of the materials while minimizing ground 
+disturbance and having appropriate spill control and containment equipment in place to protect 
+public safety and the environment in the event of a release. 
+46) The duty holder must have a documented deployment procedure appropriate for the TSPW 
+materials, the water group, and the quality of the water for conveyance that includes 
+consideration of the following: 
+a) ground surface preparation to protect the TSPW from possible damage 
+b) material handling and installation procedures 
+c) pipe connection instructions 
+d) measures to minimize TSPW movement during operations 
+e) measures to protect the TSPW when deployed 
+f) deployment cleanup and route maintenance guidance (e.g., repair of ruts, vegetation 
+control, etc.) 
+Duty holders should include any additional information deemed necessary for successful 
+deployment in their procedure. 
+16 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+47) The duty holder must keep a paper or electronic copy of the deployment procedure on site and 
+provide it to the AER on request. 
+48) Unless authorized by the AER, devices or containers to collect and contain potential leakage 
+must be used at pipe connections when conveying group 3 water within 100 m of water bodies, 
+water wells, or sensitive receptors. 
+49) Pumping units for group 2 water TSPWs within 50 m of water bodies or water wells and all 
+group 3 water TSPWs must be equipped with devices or containers to collect and contain 
+potential leakage of conveyed water, fuel, or lubricants from the pumping unit. 
+50) Unless authorized by the AER, a TSPW conveying group 2 or 3 water near water bodies, water 
+wells, or sensitive receptors (within 50 m for group 2 and within 100 m for group 3) must be 
+equipped with flow-stopping devices, such as valves, clamps, or crimping devices, placed 
+within 100 m of the water body, water well, or sensitive receptor to shut off the flow and isolate 
+portions of the TSPW to limit the volume of water released in the event of a leak. Where a 
+TSPW parallels a water body within the distances given above, additional flow-stopping 
+devices must be located a maximum of 500 m apart along the portion of the TSPW that 
+parallels the water body and within 100 m of where the TSPW nears and moves away from the 
+water body. 
+51) Where the AER is satisfied that an effective barrier to water flow exists between the TSPW and 
+a water body, water well, or sensitive receptor, requirements 48, 49, and 50 do not apply. Using 
+the TSPW Group 2/3 Water Approval Request form, the duty holder must describe how 
+existing barriers will prevent water flow from reaching water bodies, water wells, or sensitive 
+receptors and indicate the barriers on the route map. 
+For example, leakage collection devices at pipe connections (requirement 48) or at pumping 
+units (requirement 49) and flow-stopping devices (requirement 50) may not be required for a 
+TSPW deployed in a roadside ditch with a water body on the opposite side of the road, with no 
+crossing culverts. 
+52) Pumping units for group 2 and 3 water TSPWs must be equipped with automated shutdown 
+devices set to quickly deactivate pumping when significant deviations in pressure are identified 
+while minimizing nuisance trips and false alarms. 
+53) The duty holder of a TSPW must install and maintain clearly visible and legible signage at 
+appropriate locations along the TSPW route (e.g., water crossings, road crossings, and railway 
+crossings and at ancillary equipment [unless nearby signage is visible from these locations]) 
+that displays the following: 
+a) company name and emergency phone number for the pipeline operator (if not the 
+duty holder) 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 17 
+Alberta Energy Regulator 
+b) identification that the TSPW is a “Pressurized Water Pipeline” and the contents are “not 
+potable” (further identification of the contents is optional) 
+c)  applicable warnings (e.g., hazardous contents) 
+54) The duty holder must maintain a log of deployment activities conducted and provide it to the 
+AER on request. 
+8.5.4 Commissioning 
+The goal is to verify the integrity of the TSPW and its proper construction and deployment to 
+minimize the risk of preventable leaks from material or installation issues. 
+55) The duty holder must have a documented commissioning procedure appropriate for the TSPW 
+materials, the water group, and the quality of the water for conveyance that includes the 
+following: 
+a) A visual inspection of the entire TSPW, all pipe connections, and associated equipment 
+after the TSPW is deployed but before water is introduced. 
+Air testing to a pressure not exceeding 210 kPa may be used as a screening method to 
+identify any issues with pipeline integrity. Appropriate safety measures should be taken 
+when using pressurized air. 
+b) An integrity test to verify water containment:  
+i) 
+For group 1 and 2 water TSPWs, the integrity test must include the following:  
+• A visual inspection during the initial fill of the TSPW (using group 1 or 2 water) to 
+detect leaks as the leading edge of the water advances through the TSPW. Resolve 
+any leaks before going to the next step. 
+• Initiate the surveillance program immediately upon reaching operating pressure. 
+ii) For group 3 TSPWs, the integrity test must include the following: 
+•  A visual inspection during the initial fill of the TSPW (using group 1 or 2 water) to 
+detect leaks as the leading edge of the water advances through the TSPW. Resolve 
+any leaks before going to the next step. 
+• A visual inspection of the entire TSPW immediately after it reaches operating 
+pressure (with group 1 or 2 water). Water may continue to flow or be held. Resolve 
+any leaks before going to the next step. 
+• Initiate the surveillance program, introduce group 3 water, and start operations. 
+c) Verification that all monitoring equipment and systems function properly. 
+18 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+Duty holders should include any additional information deemed necessary for successful 
+commissioning in their procedure. 
+56) The duty holder must successfully complete the commissioning procedures before putting the 
+TSPW into operation. Commissioning is successful when integrity testing confirms no leaks 
+and monitoring equipment and systems function properly. 
+57) The duty holder must keep a paper or electronic copy of the commissioning procedure on site 
+and provide it to the AER on request. 
+58) The duty holder must maintain a log of commissioning activities carried out and provide it to 
+the AER on request. 
+The duty holder may follow the manufacturer’s recommended commissioning procedure if it is 
+more rigorous than the directive. 
+8.5.5 Operations 
+The goal is to operate TSPWs consistent with material specifications and parameters and minimize 
+the risk to public safety and the environment during operations. 
+59) The duty holder must have a documented operating procedure appropriate for the TSPW 
+materials, the water group, and the quality of the water for conveyance that includes the 
+following: 
+a) identification of the operating limits (e.g., pressure, flow rate, temperature, substance) 
+given in the manufacturer’s specifications and the planned MOP 
+b) instructions for safely operating pumping and monitoring equipment 
+c) directions for conducting the surveillance program (see section 8.5.6) 
+d) directions for implementing incident response (see section 8.5.7) 
+e) directions for emptying and purging the TSPW 
+f) considerations for operating the TSPW under anticipated weather conditions 
+Duty holders should include any additional information deemed necessary for successful 
+operation in their procedure. 
+60) The duty holder must keep a paper or electronic copy of the operating procedure on site and 
+provide it to the AER on request. 
+61) An operations supervisor must be on site while the TSPW is pressurized. 
+62) Chemicals or additives introduced to group 2 or 3 water must be identified on the TSPW Group 
+2/3 Water Approval Request form. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 19 
+Alberta Energy Regulator 
+63) When the active transfer of water through the TSPW is suspended for more than 24 hours, 
+pressure must be relieved from the system. 
+64) When a TSPW is out of service for more than seven days, it must be drained. 
+65) If a TSPW conveying group 2 or 3 water has been drained, a thorough visual inspection of the 
+pipeline and pipe connections must be completed immediately after refilling and 
+repressurizing it. 
+66) The duty holder must maintain a log of operational activities (e.g., pumping times, 
+maintenance, repairs) carried out and provide it to the AER on request. 
+8.5.6 Operations Surveillance 
+The goal is to monitor TSPW operations to identify and correct risks as soon as possible and avoid 
+or minimize potential effects on public safety and the environment. Effective surveillance supports 
+continuous improvement in the various aspects of TSPW use, from planning to decommissioning. 
+67) The duty holder must have a documented surveillance program appropriate for the TSPW 
+materials, the water group, and the quality of the water for conveyance that considers the 
+following hazards: 
+a) water releases (e.g., drips, sprays, breaches, breaks) 
+b) external damage that may indicate or lead to future integrity concerns (e.g., blisters, colour 
+or opacity change, bulges, cuts, scratches, gouges, kinks, folds, third-party interference) 
+c) internal damage (e.g., corrosion of couplings and fittings, abrasion) 
+d) internal blockage (e.g., ice, slush, debris) 
+e) blocked drainage, debris accumulation, flooding, and ponded water along the TSPW route 
+f) TSPW movement (e.g., excessive rolling or snaking) 
+g) effects on vegetation 
+h) ground erosion 
+i) 
+any other hazard identified as part of the duty holder’s hazard identification process 
+Regarding requirement c) above, the duty holder may perform this surveillance through spot 
+checks or by following the manufacturer’s guidance. 
+Duty holders should include any additional information deemed necessary in their program for 
+successful surveillance. The surveillance program should consider aspects related to worker 
+safety, such as traffic, wildlife, working alone, time of day, weather conditions, and other 
+factors. Operations may need to be adjusted to ensure surveillance can be completed safely. 
+20 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+68) The surveillance program for group 2 and 3 water must be submitted with the TSPW Group 2/3 
+Water Approval Request form. 
+69) The duty holder must keep a paper or electronic copy of the surveillance program on site and 
+provide it to the AER on request. 
+70) The surveillance program must be active at all times the TSPW is pressurized. 
+71) Visual observation and monitoring flow rate and pressure must be part of the surveillance 
+program and scheduled at a frequency sufficient for the timely identification of potential 
+hazards or incidents. 
+72) Pressure monitoring of the TSPW must be sufficiently sensitive to indicate the presence of a 
+leak requiring mitigation. Such pressure anomalies must be promptly investigated. 
+73) Enhanced surveillance (i.e., more frequent visual inspection) is required for portions of a TSPW 
+a) crossing water bodies (including wet ephemeral water bodies and draws and flowing 
+ditches and drains) and 
+b) when within 50 m (for group 1 and 2 water TSPWs) or 100 m (for group 3 water TSPWs) 
+of a sensitive receptor. 
+74) If surveillance activities identify the occurrence of a hazard identified in requirement 67, the 
+duty holder must investigate and remedy (if necessary) in accordance with section 8.5.7. 
+75) The duty holder must maintain a log of the surveillance activities carried out and provide it to 
+the AER on request. 
+8.5.7 Incident Response and Reporting 
+For TSPWs, an incident is the occurrence of any hazard listed in requirement 67. The incident 
+response and reporting requirements do not supersede or replace the Environmental Protection and 
+Enhancement Act, Remediation Regulation, Conservation and Reclamation Regulation, Directive 
+071: Emergency Preparedness and Response, or other relevant requirements. 
+76) TSPW duty holders must follow the requirements for spill preparedness and response in 
+sections 8 and 9 of Directive 071. 
+77) The duty holder must keep a paper or electronic copy of the spill response plan on site and 
+provide it to the AER on request. 
+Duty holders are reminded that depending on the group of water being conveyed, provisions 
+concerning release response under the Environmental Protection and Enhancement Act may apply, 
+including requirements for remedial work and reporting. For more information, see the AER’s 
+release reporting webpage. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 21 
+Alberta Energy Regulator 
+The 24-hour Environmental Response Line telephone number is 1-800-222-6514. 
+78) The duty holder of a group 2 or 3 TSPW must maintain a log of incidents, near misses, or 
+identified hazards noted during operations and submit it to the AER at the end of operations or 
+on request by the AER (using the TSPW Operations Summary form) that includes the 
+following information: 
+a) location and time 
+b) description of the incident and circumstances leading to its occurrence 
+c) details of any action taken 
+d) any outstanding follow-up measures 
+79) If an incident other than water release occurs, the duty holder must initiate incident response 
+within the following timeframes unless other legislation or regulation takes precedence: 
+a) For incidents related to TSPW damage or blockage (i.e., hazards in requirement 67(b-d)), 
+i) 
+respond as soon as possible for TSPWs conveying group 1 water and 
+ii) immediately for TSPWs conveying group 2 or 3 water. 
+b) For incidents related to drainage and debris (i.e., hazards in requirement 67(e)), respond 
+immediately regardless of the water group being conveyed. 
+c) For incidents related to TSPW movement, effects on vegetation, erosion, or other identified 
+hazards (i.e., hazards in requirement 67(f-i)), respond immediately if a safety hazard is 
+created or as soon as practicable if a safety hazard is not created. 
+8.5.8 End of Operations 
+The end of operations occurs when the duty holder no longer needs the TSPW for water 
+conveyance or the expiry of the notification or approval or any extension granted, whichever 
+occurs first. 
+80) If an AER suspension or abandonment order exists for any site connected to the TSPW, making 
+continued use of the TSPW unfeasible, the duty holder must immediately start and complete the 
+end-of-life obligations within the specified timeframes. 
+8.5.8.1 
+Decommissioning 
+81) At the end of operations, the duty holder must drain and purge all water in the TSPW within 
+seven calendar days and manage the water in accordance with applicable regulations. 
+22 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+82) The duty holder must remove the TSPW and its associated equipment within one month of the 
+end of operations. If conditions prevent removal within the specified timeframe, the duty holder 
+must initiate removal as soon as conditions permit. 
+83) If removal is not possible within the specified timeframe (see requirement 82), the duty holder 
+must inform the AER by submitting an extension request (see section 8.2). An extension for 
+TSPW removal does not permit the duty holder to continue conveying water. 
+8.5.8.2 
+Site Restoration 
+84) Within two months of the end of operations, the duty holder must restore the TSPW route to 
+predeployment conditions (or a condition otherwise agreed to with the landowners, occupants 
+or entities in the care and control of the land). If conditions prevent site restoration within the 
+specified timeframe, the duty holder must initiate and complete restoration as soon as 
+conditions permit. 
+85) Such situations must be identified to the AER by submitting an extension request (see section 
+8.2). An extension for TSPW site restoration does not permit the duty holder to continue 
+conveying water. 
+8.5.8.3 
+Closeout Reporting 
+86) The duty holder must submit a completed TSPW Operations Summary form within 30 calendar 
+days of completing site restoration activities, including the following: 
+a) actual volume of water conveyed 
+b) dates of completion for TSPW operations, TSPW removal, and restoration of the 
+TSPW route 
+c) a summary of any incidents (see requirement 78) 
+9 
+Elevated-Temperature Pipelines 
+9.1 
+Introduction 
+Pipelines used in the recovery of hydrocarbons from a reservoir or oil sands deposit are a “pipeline” 
+under the Pipeline Act. 
+Elevated-temperature pipelines include 
+• pipelines that only distribute steam at temperatures >120°C, 
+• pipelines that operate in multiple services, including steam distribution at temperatures >120°C, 
+or 
+• pipelines for recovering produced fluids with recovered steam condensate from a reservoir at 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 23 
+Alberta Energy Regulator 
+temperatures >230°C. 
+Based on the expected operating conditions, the duty holder's design engineer is responsible for 
+determining if an elevated-temperature pipeline design is required. Refer to clause 14 (elevated
+temperature pipelines) of CSA Z662 for more information. 
+In Alberta, there is shared responsibility for licensing and design evaluation of pipelines 
+distributing steam at design temperatures >120°C or recovering produced reservoir fluids at design 
+temperatures >230°C. Where such pipelines relate to an oil or gas project under the jurisdiction of 
+the AER, the AER is responsible for pipeline licensing. Through a memorandum of understanding 
+with ABSA (the pressure equipment safety authority), ABSA is responsible for reviewing pipeline 
+design, quality management, construction, pipeline integrity management program, and registering 
+the design. Typically, applicants obtain design registration from ABSA before applying to the AER 
+to construct the pipeline. 
+CSA Z662 includes requirements for pipelines distributing steam at temperatures >120°C and 
+pipelines recovering produced reservoir fluids at operating temperatures >230°C. Figure 14.1 of 
+CSA Z662 illustrates this relationship in a flowchart. Also, the flowchart in appendix 3 of this 
+directive further explains the applicability of AER-ABSA jurisdiction. Steam distribution pipelines 
+at >120°C or other pipelines with a design temperature >230°C are subject to the design standards 
+of clause 14 of CSA Z662 (elevated-temperature pipelines). If a pipeline is used only in steam 
+distribution service (i.e., not multiple service or a production pipeline), Annex I Oilfield steam 
+distribution pipelines – Alternate provisions (steam only) may be used as a design option. All other 
+produced reservoir fluid pipelines with a design temperature ≤230°C may follow clause 4 of 
+CSA Z662 design standards or, optionally, clause 14 design standards, as ABSA does not allow an 
+existing AER-approved pipeline to be converted to steam distribution service unless the pipeline 
+was originally registered for those services. 
+9.2 
+Exemptions 
+Temporary steam distribution pipelines used in conjunction with an approved oil sands scheme do 
+not require a licence under the Pipeline Act. For the AER’s purpose, temporary is defined as not 
+exceeding six consecutive months of service. However, steam distribution pipelines of a capacity 
+>0.5 m3 require ABSA design registration, regardless of the time they will be in service. Steam 
+distribution pipelines of capacity ≤0.5 m3 do not require design registration under the Pressure 
+Equipment Safety Regulation (PESR). 
+Steam distribution pipelines confined strictly within the facility surface lease boundaries of a 
+steam-generating plant, satellite, battery, or well site and steam manifolds and measuring facilities 
+at multiwell satellites are considered to form pressure piping systems as defined in the PESR and 
+do not require a licence under the Pipeline Act. ABSA requirements apply in these instances. 
+24 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+9.3 
+Alberta Energy Regulator 
+Application for a Pipeline Licence 
+For pipelines not covered under the exemption for temporary steam distribution pipelines and that 
+traverse or enter land outside the facility surface lease boundaries of a plant, well site, satellite, or 
+battery, the applicant must apply to the AER for a licence as required by Part 4 of the Pipeline Act. 
+Under section 7(2) of the Pipeline Rules, and as part of the Directive 056 application, the AER 
+requires confirmation that the design of elevated-temperature pipelines has been registered with 
+ABSA in accordance with section 16 of the PESR. 
+Pressure control and overpressure protection are to satisfy the requirements for overpressure 
+protection of clause 4 of CSA Z662 and section 38 of the PESR. 
+87) If mechanical couplings are used, the Directive 056 application must confirm the couplings are 
+registered with ABSA. 
+For more information on the applicability of ABSA design registration and AER licence 
+application, see the flowchart in appendix 3 of this directive. 
+9.4 
+Field Construction and Inspection 
+Notice of field construction must be provided to the AER, in accordance with section 9 of the 
+Pipeline Rules. 
+Construction quality control documentation is subject to ABSA piping construction quality 
+authorization requirements. Environmental, licence, and ground disturbance inspections may be 
+carried out by AER inspectors. Construction may be subjected to inspection by an ABSA Safety 
+Codes Officer. 
+9.5 
+Pressure Testing 
+Pressure testing requirements are specified in Part 3 of the Pipeline Rules and clause 14 of 
+CSA Z662 or Annex I. 
+Notice of pressure test must be provided to the AER in accordance with section 33 of the 
+Pipeline Rules. 
+Test pressures, mediums, and procedures must be approved by ABSA in accordance with sections 
+16(1) and 30 of the PESR. Testing must be conducted in a manner that satisfies CSA Z662 and 
+section 30 of the PESR. AER inspectors may require documentation of the successful pressure test. 
+Records of the successful pressure test must be in accordance with the Pipeline Rules and 
+sections 31 and 32 of the PESR. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 25 
+Alberta Energy Regulator 
+9.6 
+Operations 
+In accordance with section 7(2) of the Pipeline Rules, a licensee must obtain all required approvals 
+from ABSA before putting the pipeline into operation. 
+In-service inspections and integrity management for the pipelines must be addressed in the pressure 
+equipment integrity management system in a manner acceptable to ABSA. AER requirements for 
+operation, maintenance, and integrity management of steam distribution pipelines and 
+elevated-temperature pipelines are superseded by the stated ABSA requirements. As required under 
+the Safety Codes Act, unsafe conditions and incidents not associated with a failure must be reported 
+to ABSA. 
+9.7 
+Failure Investigation 
+For elevated-temperature pipelines, failure is defined as a condition where product is released from 
+the pipeline. However, for steam distribution pipelines only, a temporary fluid release caused by a 
+leakage at flanges, packing glands, and similar fittings that can be terminated by mechanical 
+adjustments, such as the tightening of bolts, is not considered a failure. 
+A failure, as defined above, of a licensed pipeline must be reported immediately to the AER (see 
+section 35 of the Pipeline Act) and to ABSA. ABSA will investigate the failure as a pressure 
+equipment incident and provide the report conclusions to the AER. An AER inspector may conduct 
+an on-site inspection concentrating on the environmental and emergency response aspects of any 
+fluid loss. The AER may require additional information concerning spill containment, recovery 
+procedures, and site rehabilitation (see section 67 of the Pipeline Rules). Notification to Alberta 
+Environment and Protected Areas may also be required. 
+ABSA and the AER may conduct a joint investigation within their respective areas of 
+responsibility. If a failure causes the injury or death of any person, the failure investigation may 
+also involve representatives of Occupational Health and Safety and other regulatory or law 
+enforcement authorities. 
+9.8 
+Changes to Registered Designs and Pipeline Licence 
+Changes to a registered design are handled by ABSA in accordance with section 22 of the PESR. 
+ABSA does not allow an existing AER-approved pipeline to be converted from another service to a 
+steam distribution service unless the pipeline was originally registered for those services. 
+Amendments to the licensee’s AER pipeline licence are only required if the design changes lead to 
+a change in the data recorded on the pipeline licence or in AER shapefiles. 
+26 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+10 Comingling of Oil and Gas in a Single Pipeline 
+10.1 Introduction 
+Manual 014: Liquid Classification and Well Status Fluid Type Determination for Oil and Gas 
+Wells provides classification criteria for wells. The properties of the liquids produced by a well 
+determine whether it is condensate or oil, which determines whether the well is classified as oil 
+or gas. 
+Wells producing from a single reservoir usually have the same classification. However, sometimes 
+a well within the group of wells will have a different classification even though its production 
+characteristics are similar. Consequently, a pipeline gathering system could be licensed for a 
+substance category different from the class of the outlier well. This situation would necessitate a 
+separate pipeline to carry similar production from the same reservoir. In such cases, the AER would 
+consider allowing commingling production in a single pipeline system. 
+Commingling of fluids is only intended for cases where well classification results in wells being 
+stranded in an area where the surrounding wells predominantly have a different well classification, 
+but the production compositions of the stranded well are similar to the surrounding wells. 
+10.2 Criteria for Pipeline Licensing of Commingled Production 
+This process only applies to the commingling of oil effluent and natural gas. Commingling of oil 
+effluent and natural gas where either one contains H2S is not permitted. 
+88) The gas-oil ratio (GOR) must be measured at or converted to standard conditions. Depending 
+on the calculated GOR of the commingled stream, the pipeline may need to be relicensed. 
+89) Where oil effluent flows into a natural gas pipeline, and the resulting calculated GOR in the 
+downstream line is ≤2000 m3/m3, the downstream line must be relicensed as an oil effluent 
+pipeline. In this case, a licence amendment is required in accordance with Directive 056. 
+Where oil effluent flows into a natural gas pipeline, the resulting calculated GOR in the 
+downstream line must be >2000 m3/m3 for the downstream pipeline to remain licensed as a natural 
+gas pipeline. 
+Where natural gas flows into an oil effluent pipeline, the downstream oil effluent pipeline remains 
+an oil effluent pipeline regardless of the gas content. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 27 
+
+Appendix 1 
+Definitions 
+Alberta Energy Regulator 
+alternative corrosion 
+prevention system 
+business day 
+competent individual 
+corrosion prevention 
+coating 
+An insulation system designed to move and drain moisture from the pipe 
+exterior and prevent corrosion under the insulation. These systems may be 
+acceptable substitutes for corrosion prevention coatings. 
+Monday through Friday, excluding statutory holidays. 
+A person who is qualified, trained, and experienced to perform the required 
+duties in accordance with the licensee’s Safety And Loss Management System. 
+A material applied to the exterior surface of a buried or insulated metallic 
+pipeline to prevent water and other corrodents from contacting the metallic 
+surface. 
+defective or inoperative An overpressure protection device that is incapable of stopping the pipeline 
+pressure from exceeding the maximum operating pressure except as allowed in 
+accordance with CSA Z662. 
+design 
+Calculations, drawings, specifications, specimen, and models. 
+ephemeral water bodies Depressions in the ground surface with a gradient that may carry water during 
+the spring or after heavy rainfall and having little or no evidence of a stream 
+channel or bank development. 
+maximum operating 
+pressure 
+nonsaline water 
+pipeline 
+piping 
+pipeline system 
+The maximum pressure allowed by the licence or approval. 
+Water with total dissolved solids less than or equal to 4000 milligrams per litre. 
+As defined in the Pipeline Act. 
+Pipe or pipeline contained within the lease site; may or may not be 
+aboveground. 
+Pipelines required for the measurement, processing, storage, and transportation 
+of oil or gas industry fluids. 
+pressure piping system As defined by in the Pressure Equipment Safety Regulation, pipe, tubes, 
+conduits, fittings, gaskets, bolting, and other components that make up a system 
+for the conveyance of an expansible fluid under pressure and may also control 
+the flow of that fluid. 
+pressure plant 
+As defined in the Pressure Equipment Safety Regulation, a pressure vessel or a 
+system or arrangement of pressure vessels and the pressure piping system used 
+in connection with the pressure vessel or the system or arrangement of pressure 
+vessels. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 29 
+Alberta Energy Regulator 
+pressure vessel 
+processing plant 
+pumping unit 
+sensitive receptor 
+temporary surface 
+pipeline 
+As defined in the Pressure Equipment Safety Regulation, a vessel used for 
+containing, storing, distributing, processing, or otherwise handling an expansible 
+fluid under pressure. 
+As defined in the Pipeline Act. 
+Mobile equipment used to pump oil industry fluids and includes pumps, drivers, 
+controls, piping, and other appurtenances. 
+Sites or structures that people or animals may frequently occupy, such as 
+houses, playgrounds, childcare facilities, campgrounds, hospitals, feedlots, 
+pastureland, etc. 
+As defined in the Pipeline Rules. 
+30 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+Appendix 2 Interpretation of Jurisdictional Relationships for the Design of Pipelines, 
+Pressure Equipment, and Pressure Piping 
+Background 
+This appendix is a reference tool to assist licensees in understanding the relationships in design 
+methodology and jurisdiction found in Alberta legislation and relevant industry standards used by 
+the Alberta oil and gas industry: 
+• American Society of Mechanical Engineers (ASME) B31.3, Process Piping (2018 edition) 
+• CSA standard CSA Z662: Oil and gas pipeline systems 
+• Oil and Gas Conservation Act (OGCA) and Oil and Gas Conservation Rules (OGCR) 
+• Pipeline Act and Pipeline Rules 
+• Pressure Equipment Safety Regulation (PESR) and Pressure Equipment Exemption Order 
+• Safety Codes Act (SCA) 
+The reference tool provides information for pipelines, on-lease process piping and equipment, and 
+pressure piping and equipment. 
+The information provided in this reference tool does not apply to the regulatory jurisdiction for 
+incident response and reporting, nor does it limit the scope of integrity management programs or 
+liability for on-lease piping. 
+The diagrams provided show typical design and jurisdictional relationships; how facility piping is 
+configured or laid out can influence jurisdiction and is the design engineer’s responsibility. The 
+variability of facility piping should be considered when determining design jurisdiction (and 
+incident response and reporting requirements). The diagrams provided are examples and not 
+intended as suggestions of how equipment should be configured nor represent the only way that 
+jurisdiction may be designated. The general principles provided in this appendix apply to 
+alternative layouts. 
+The simplified example diagrams of well, pipeline, or facility piping configurations demonstrate the 
+principles of design methodology and jurisdiction but do not supersede the requirements in the 
+applicable acts, regulations, and standards. Although every effort has been made to ensure 
+information accuracy, the user is responsible for ensuring the facility or pipeline complies with all 
+requirements, regardless of the examples provided. 
+This edition of the tool supersedes the one in the December 2011 edition of Directive 077 and is not 
+intended to be applied retroactively. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 31 
+Alberta Energy Regulator 
+The interpretations provided in this reference tool apply to all oil and gas pipelines in Alberta 
+except the following: 
+• a pipeline situated wholly within the property of a refinery, processing plant, coal processing 
+plant, marketing plant, or manufacturing plant 
+• a pipeline regulated by the Canada Energy Regulator 
+• a gas or oil fuel pipe wholly within the property of a consumer 
+• a boiler, pressure vessel, or pressure piping system within the meaning of the definitions under 
+the SCA 
+• low-pressure gas distribution pipelines 
+Principles Used in Interpretation 
+• This reference tool does not cover design and licensing requirements for a wellhead; refer to the 
+OGCA. If a single valve is shown on the wellhead outlet, that valve is considered part of the 
+wellhead as it isolates the wellhead. 
+• Except in the case of a single valve on the wellhead outlet, the first valve inside the lease 
+boundary is usually interpreted as the end of the Pipeline Act jurisdiction because this valve is 
+the first isolation point for the pipeline. The entire valve is considered to be within the Pipeline 
+Act jurisdiction. 
+• A pig trap connected to a pipeline under the Pipeline Act jurisdiction is generally considered 
+part of the licensed pipeline, including any connected piping and valving used to operate and 
+isolate the pig traps and the piping isolation valve. When a pig trap is part of a pipeline, the first 
+valve inside the lease boundary might not be considered the end of the Pipeline Act jurisdiction 
+because all the pipeline up to and including the pig trap could be considered part of the licensed 
+pipeline. Pig traps that are part of a pipeline under Pipeline Act jurisdiction are excluded from 
+the Pressure Equipment Exemption Order under the SCA and therefore built in accordance with 
+CSA Z662. 
+• In situations where pipelines are not associated with a licensed facility, such as a pipeline 
+pigging junction, it would be impractical to consider any connecting piping outside of the traps 
+and isolation piping to be on-lease piping because all piping is functionally part of the 
+pipelines. In such a case, treating all piping as part of a Pipeline Act pipeline system is 
+reasonable. 
+• Where multiple pipelines enter a common facility, the licensee may designate the jurisdictional 
+break at the individual block valves (i.e., first isolation valve) on each pipeline if so equipped. 
+Shared piping and pigging equipment inside the facility boundary and inside those pipeline 
+32 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+isolation valves could then be designated as under the OGCA jurisdiction. 
+However, in doing so, any piping that might qualify as a “pressure piping system” as defined in 
+the PESR is then subject to the SCA, and even though the facility may be under the jurisdiction 
+of the OGCA, the SCA would apply to the pressure piping system and pigging equipment. The 
+Pressure Equipment Exemption Order excludes pipelines under the Pipeline Act or OGCA. 
+• CSA Z662 provides an option to allow ASME design for a pipeline within a compressor or 
+pump station licensed as a pipeline installation (either a standalone licence or as part of a 
+pipeline licence). The licensee must also comply with any requirements of CSA Z662 that are 
+additional to those specified by ASME. 
+• Jurisdiction does not change where the pipeline crosses a lease boundary. Pipelines entering or 
+leaving a lease may travel some distance before reaching the first isolation valve or other 
+facility piping, as the case may be. 
+• It may be helpful in interpretation to consider that jurisdiction under the Pipeline Act ends with 
+the last flange face that bolts to equipment under a different design jurisdiction. 
+• On-lease piping designated under the OGCA does not have a design code specified and may be 
+designed and built as either ASME B31.3 piping or CSA Z662 piping. 
+• If the AER requests, licensees are expected to support their claims of jurisdictional assignment 
+based on their engineering design drawings. 
+Notes on Design and Licensing Requirements 
+In general, pipelines and facility piping fall within three categories concerning their design 
+requirements: pipeline, on-lease or facility piping, and pressure plant piping (under ABSA). 
+Pipeline 
+Includes pipelines entering or leaving a lease boundary (including its designated on-lease isolation 
+valve), piping within a pipeline installation lease boundary, and general pig traps and their ancillary 
+piping connected directly to a single pipeline. 
+• Pipe and components under the jurisdiction of the AER and licensed under Directive 056: 
+Energy Development Applications and Schedules must comply with the design requirements of 
+CSA Z662. 
+• The scope diagrams in clause 1 of CSA Z662 identify the types of facilities where CSA Z662 
+design would and would not be required. However, CSA Z662 is an acceptable design standard 
+for on-lease piping where the OGCA applies. 
+• Apply CSA Z662 design requirements to Pipeline Act jurisdiction pig traps and the piping and 
+valving used to operate the pig trap or to isolate the pig trap. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 33 
+Alberta Energy Regulator 
+On-Lease Piping 
+Includes piping and components within an AER-licensed facility considered not part of a pipeline 
+nor a “pressure plant” pressure piping system. 
+• Piping and components included in a facility licensed under Directive 056or as a part of an 
+unlicensed AER facility are under the jurisdiction of the OGCA and OGCR, which do not 
+specify a design code or standard. Such piping may use either CSA Z662 or ASME B31.3 
+design, provided that whichever standard is selected is used for all aspects of that piping. If the 
+piping constitutes a pressure piping system, it falls under the jurisdiction of the SCA. 
+• On-lease piping with pig traps may use either CSA Z662 or ASME B31.3 design standards, 
+provided that piping is not interpreted as a pipeline and not interpreted as under SCA 
+jurisdiction. 
+• Piping crossing between adjacent and abutting facility surface leases can be considered on-lease 
+piping. Leases must abut, and the piping cannot pass through any private or public lands 
+between the leases. 
+• Piping considered to be on-lease or facility piping 
+− is not part of the SCA “pressure plant” pressure piping system; 
+− is outside the scope of CSA Z662 as per the scope diagrams in clause 1 of CSA Z662, 
+examples being production facilities and well sites; and 
+− is not licensed as a pipeline. 
+Pressure Piping 
+Includes piping and components the SCA and PESR identify as part of a “pressure plant” pressure 
+piping system. 
+• “Pressure piping” is not under AER jurisdiction as per the Pipeline Act and Pipeline Rules and 
+does not follow CSA Z662. 
+• A “pressure plant” pressure piping system is within ABSA design jurisdiction and is 
+administered by ABSA; it may exist within an AER-licensed facility or installation. 
+• Pressure piping systems and their components are within ABSA design jurisdiction and are 
+administered by ABSA under the SCA. A pressure piping system may exist within an AER
+licensed facility or installation. 
+• Both ABSA and the AER have roles respecting pipelines operating in steam or elevated
+temperature services. ABSA conducts the technical design review and registration, and the 
+AER licenses the pipeline. 
+34 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+ 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 35 
+Interpretation Diagrams 
+Example 1: Single production well (well site with no “pressure plant”) 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline 
+General design 
+jurisdictional 
+relationship 
+Piping and components located wholly 
+within well sites or facilities and not 
+considered a pipeline nor part of a 
+“pressure plant” pressure piping system. 
+A pipeline and its components entering 
+or leaving a lease boundary up to and 
+including the first designated isolation 
+valve. 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline Rules 
+Design jurisdiction AER AER 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 
+Comments Metering is covered by the OGCR. Transition fittings may be mandatory in 
+applicable sour service pipelines. 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+This example does not require facility licensing. 
+Other comments There is no “pressure plant” as per the SCA/PESR; therefore, no “pressure piping 
+system” is present on site. 
+If the lease isolation valve is part of the wellhead and there are no other on-site isolation 
+valves, the well shutoff valve is considered part of the wellhead, and all piping leaving the 
+valve considered a pipeline. 
+  
+Alberta Energy Regulator 
+ 
+36 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Example 2: Single production well (well site with line heater) 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered a pipeline nor 
+part of a “pressure plant” 
+pressure piping system. 
+A pipeline and 
+components entering or 
+leaving a lease boundary 
+up to and including the 
+first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR as 
+part of a “pressure plant” 
+pressure piping system, 
+including interconnecting 
+piping between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 SCA and PESR 
+Comments Metering is included in the 
+OGCR. 
+Transition fittings may be 
+mandatory in applicable 
+sour service pipelines. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+This example, as shown, does not require facility licensing. In some cases, a line heater 
+may require licensing (see Directive 056). 
+Other comments In this example, the “fired-heater pressure coil” is a single component of a “pressure 
+plant.” 
+Alberta Energy Regulator 
+ 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 37 
+Example 3: Single production well (well site with only a dehydrator and/or separator “pressure plant”) 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered a pipeline nor 
+part of a “pressure plant” 
+pressure piping system. 
+A pipeline and 
+components entering or 
+leaving a lease 
+boundary up to and 
+including the first 
+designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR 
+as part of a “pressure 
+plant” pressure piping 
+system, including 
+interconnecting piping 
+between “pressure plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and 
+Pipeline Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 Safety Codes Act and 
+PESR 
+Comments 
+ 
+Transition fittings may 
+be mandatory in 
+applicable sour service 
+pipelines. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Depending on equipment configuration and H2S content, this may qualify as a facility and 
+require a Directive 056 application for a facility licence. All on-lease piping, pressure 
+piping, and equipment are included within this licence. 
+Other comments This well-site configuration includes a “pressure plant” as per the SCA. 
+ 
+Alberta Energy Regulator 
+ 
+38 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Example 4: Gas satellite or group gas gathering facility with a “pressure plant” 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered a pipeline nor 
+part of a “pressure plant” 
+pressure piping system. 
+A pipeline and 
+components entering or 
+leaving a lease boundary 
+up to and including the 
+first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR 
+as part of a “pressure 
+plant” pressure piping 
+system, including 
+interconnecting piping 
+between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 SCA and PESR 
+Comments  Transition fittings may be 
+mandatory in applicable 
+sour service. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Depending on equipment configuration and H2S content, this site may qualify as a 
+facility and require a Directive 056 application for a facility licence. All on-lease piping, 
+pressure piping, and equipment are included within this licence. 
+Other comments This well-site configuration includes multiple “pressure plants” as per SCA. 
+As shown in this example, depending on the equipment configuration, vessels, or 
+equipment under the SCA may be connected by pressure piping within the scope of the 
+Alberta Energy Regulator 
+SCA, or piping may be distinct from the SCA, in which case it may be designed as per 
+the OGCA and OGCR. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 39 
+Alberta Energy Regulator 
+ 
+40 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Example 5: Compressor or pump station licensed as pipeline installation (downstream) 
+ 
+Design criteria Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+A pipeline and components entering or 
+leaving a lease boundary up to and 
+including the first designated isolation valve. 
+Piping and components identified by 
+SCA/PESR as being part of a “Pressure 
+Plant,” including interconnecting piping 
+between “Pressure Plants,” 
+Design legislative 
+authority 
+Pipeline Act and Pipeline Rules SCA and/or PESR 
+Design jurisdiction AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 
+CSA Z662 permits the optional use of 
+ASME B31.3 to design piping systems for 
+compressor and pump stations. 
+SCA and PESR 
+Comments Transition fittings may be mandatory in 
+applicable sour service. 
+A compressor or pump unit that is 
+functionally part of an upstream facility 
+would be included within the design of the 
+upstream facility. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing for a downstream compressor or pump station is covered under the 
+Directive 056 application for a pipeline installation license. The pump or compressor 
+station would be a pipeline installation and may also include associated piping and 
+other equipment. 
+Other comments None. 
+ 
+Alberta Energy Regulator 
+Example 6: High-pressure pipeline junction on a pipeline right-of-way 
+Design criteria 
+Note 2: pipeline 
+General design 
+jurisdictional 
+relationship 
+A pipeline and components entering or leaving a lease boundary up to and including the 
+first designated isolation valve. 
+Design legislative 
+authority 
+Pipeline Act and Pipeline Rules 
+Design jurisdiction 
+AER 
+Design code and 
+code of 
+construction 
+CSA Z662 
+Licensing 
+requirements 
+Pig barrels are part of the pipeline. 
+Other comments 
+Because all equipment is on the pipeline right-of-way and no facility surface lease is 
+involved, all equipment is considered to be pipeline. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 41 
+Alberta Energy Regulator 
+ 
+42 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Example 7: Source water collection, injection, and disposal – wells are off lease 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered a pipeline nor 
+part of a “pressure plant” 
+pressure piping system. 
+A pipeline and components 
+entering or leaving a lease 
+boundary up to and including 
+the first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR 
+as part of a “pressure 
+plant” pressure piping 
+system, including 
+interconnecting piping 
+between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 SCA and PESR 
+Comments 
+ 
+Transition fittings may be 
+mandatory in applicable sour 
+service. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Site on-lease piping, pressure piping, and equipment are covered under the Directive 056 
+application for a facility licence. 
+Other comments Wells are off site; thus, the lines to the facility are a pipeline. 
+This configuration includes a “pressure plant” as per the SCA. 
+Alberta Energy Regulator 
+ 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 43 
+ 
+Example 8: Oil or gas satellite with header to group pipelines 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered to be a pipeline 
+nor part a “pressure plant” 
+pressure piping system. 
+A pipeline and 
+components entering or 
+leaving a lease boundary 
+up to and including the 
+first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR as 
+part of a “pressure plant” 
+pressure piping system, 
+including interconnecting 
+piping between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+Safety Codes Act and/or 
+PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 SCA and PESR 
+Comments  Transition fittings may be 
+mandatory in applicable 
+sour service. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Site on-lease piping, pressure piping, and equipment are covered under the Directive 056 
+application for a facility licence. 
+Other comments This configuration includes a “pressure plant” as per the SCA and an on-lease wellhead. 
+ 
+Alberta Energy Regulator 
+ 
+44 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Example 9: Oil battery 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered to be a pipeline 
+nor pat of a “pressure plant” 
+pressure piping system. 
+A pipeline and 
+components entering or 
+leaving a lease boundary 
+up to and including the 
+first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR 
+as part of a “pressure 
+plant” pressure piping 
+system, including 
+interconnecting piping 
+between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 CSA Z662 SCA and PESR 
+Comments 
+ 
+Transition fittings may be 
+mandatory in applicable 
+sour service. 
+ 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Site on-lease piping, pressure piping, and equipment are covered under the Directive 056 
+application for a facility licence. 
+Other comments This facility configuration includes a “pressure plant” as per the SCA. 
+In this example, the tank is part of the battery lease and not part of a “pipeline 
+installation.” 
+If the oil storage tank is not included in a facility lease, it would require a licensed pipeline 
+to connect to it. If the tank is a “pipeline installation,” it would require a surface lease to 
+accommodate it at that location. 
+Alberta Energy Regulator 
+ 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 45 
+Example 10: Heavy oil or thermal in situ facilities 
+ 
+Design criteria Note 1: on-lease piping Note 2: pipeline Note 3: pressure piping 
+General design 
+jurisdictional 
+relationship 
+Piping and components 
+located wholly within well 
+sites or facilities and not 
+considered a pipeline nor a 
+“pressure plant” pressure 
+piping system. 
+A pipeline and 
+components entering or 
+leaving a lease boundary 
+up to and including the 
+first designated isolation 
+valve. 
+Pipe and components 
+identified by SCA/PESR as 
+part of a “pressure plant” 
+pressure piping system, 
+including interconnecting 
+piping between “pressure 
+plants.” 
+Design legislative 
+authority 
+OGCA and OGCR Pipeline Act and Pipeline 
+Rules 
+SCA and/or PESR 
+Design jurisdiction AER AER ABSA 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3. 
+If CSA Z662 is used, 
+clause 14 or Annex I are 
+applicable for steam 
+>120°C, and clause 14 is 
+applicable for produced 
+fluids >230°C. 
+CSA Z662 clause 14 or 
+Annex I are applicable for 
+steam >120°C, and 
+clause 14 is applicable for 
+produced fluids >230°C. 
+Clause 14 is optional for 
+produced fluids ≤230°C. 
+SCA, PESR, and ABSA 
+IB10-006: Steam Pipelines 
+(latest revision). 
+ 
+Licensing 
+requirements 
+Pipeline licensing is covered under the Directive 056 application for a pipeline licence. 
+Heavy oil and thermal facility applications follow Directive 056 licensing requirements. 
+Site on-lease piping, pressure piping, and equipment are covered under the Directive 056 
+application for a facility licence. 
+See Directive 023: Oil Sands Project Applications for thermal recovery scheme 
+approvals. 
+Steam and elevated-temperature pipelines may require registration with ABSA as per 
+Directive 077, Directive 056, CSA Z662 (clause 14, Figure 14.1), and ABSA IB10-006, 
+Steam Pipelines (latest revision). 
+Alberta Energy Regulator 
+Other comments 
+This facility configuration includes a “pressure plant” as per the SCA. 
+46 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+Example 11: Generalized pig trap – component of pipeline licence 
+Design criteria 
+Note 2: pipeline 
+General design 
+jurisdictional 
+relationship 
+A pipeline and components entering or leaving a lease boundary up to and including the 
+first designated isolation valve. The branch and purge lines and valves could be either 
+pipeline or on-lease pipeline, depending on the type and configuration of other equipment. 
+Design legislative 
+authority 
+Pipeline Act and Pipeline Rules 
+Design jurisdiction 
+AER 
+Design code and 
+code of 
+construction 
+CSA Z662 
+Other comments 
+In this example, the riser and pig trap are included under the Directive 056 pipeline 
+licence. 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 47 
+Alberta Energy Regulator 
+Example 12: Pigging sender with pigging valve 
+Design criteria 
+Note 1: on-lease piping 
+Note 2: pipeline 
+General design 
+jurisdictional 
+relationship 
+Piping and components located 
+wholly within well sites or facilities 
+and not considered a pipeline nor 
+a “pressure plant” pressure piping 
+system. 
+A pipeline and components entering or leaving a 
+lease boundary up to and including the first 
+designated isolation valve. 
+Design legislative 
+authority 
+OGCA and OGCR 
+Pipeline Act and Pipeline Rules 
+Design jurisdiction 
+AER 
+AER 
+Design code and 
+code of 
+construction 
+CSA Z662 or ASME B31.3 
+CSA Z662 
+Comments  
+Transition fittings may be mandatory in applicable 
+sour service. 
+Other comments 
+In this example, the pigging valve is included under the Directive 056 pipeline licence in 
+the same manner as for a pig trap. 
+48 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
+Alberta Energy Regulator 
+Appendix 3 Jurisdictional Interpretation for Elevated-Temperature Pipelines 
+Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 49 
+Alberta Energy Regulator 
+Notes: 
+1 All pipelines require an AER licence, including pipelines running between distinct mineral 
+surface leases (MSLs) not considered to be within the same lease boundary (e.g., pipelines between 
+steam-assisted gravity drainage [SAGD] well pads and the central processing facility are not 
+considered as being on the same lease.) 
+2 Production pipelines gather production (may be in liquid, vapour, or multiphase form and may 
+include recovered steam) and are not in any other service. 
+Steam distribution pipelines distribute steam from a steam-generating facility to steam-injection 
+wells or well-pad facilities and are not in any other service. Multiservice pipelines are pipelines in 
+steam distribution service or production service at various times. 
+3 “Regular Z662” refers to conventional steel pipeline design using clauses 3 to 10 and 16 (if sour 
+service) of CSA Z662: Oil and gas pipeline systems. 
+4 “Z662 clause 14” refers to clause 14 (design) of CSA Z662 with other CSA Z662 clauses (3 to 10 
+and 16) as applicable. 
+5 “Z662 Annex I” refers to CSA Z662 Annex I design with clause 14 and other CSA Z662 clauses 
+(3 to 10 and 16) as applicable. 
+6 ABSA Directive IB10-006 requirements apply, including ABSA design registration. ABSA 
+IB10-006 and ABSA registration only apply to pipelines with design pressure greater than 
+103 kPa(g) and volume greater than 0.5 m3. 
+50 Directive 077: Pipelines – Requirements and Reference Tools (November 2023) 
