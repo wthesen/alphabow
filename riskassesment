@@ -1,0 +1,1695 @@
+Enhanced Pipeline Risk Assessment 
+Part 1—Probability of Failure Assessments 
+Revision 2.1 
+W. Kent Muhlbauer, PE 
+www.pipelinerisk.com 
+This document presents new material that is to be incorporated into the book:  
+Pipeline Risk Management Manual, 4th Edition,
+ by W. Kent Muhlbauer, published by 
+Gulf Publishing Co.  This material should be viewed as a book excerpt.  As a 
+standalone document, it lacks some of the definitions and discussions that can be 
+found in other chapters of that book.  Philosophies of risk, data management, 
+segmentation, dealing with uncertainty, and specifics of all variables impacting 
+pipeline risk are among the topics into which this new material fits.  The intricacies of 
+dispersion modeling, receptor vulnerabilities, product characteristics, and other 
+aspects of consequence modeling are also not fully developed in this excerpt.  The 
+reader is referred to the 3rd edition text (and 4th edition, when available) for details 
+and clarifications of concepts that are not fully developed in this document. 
+This material represents ideas and possible approaches to problem-solving that may 
+or may not be appropriate in certain situations and applications.  The user of this 
+material is strongly urged to exercise careful judgment in the use of all information 
+presented here.  Author provides no guarantee, expressed or implied, with regard to 
+the general or specific application of this information.  The user accepts all liability in 
+any and all applications of any material taken from this document. 
+Copyright © 2006 by WKM Consultancy.
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+2
+ 
+Table of Contents 
+ 
+Revision History....................................................................................................................2 
+1.  Introduction.......................................................................................................................3 
+2.  Background.......................................................................................................................3 
+3.  “Limitations” in Previous Approaches.............................................................................4 
+4.  Improvement Opportunity................................................................................................6 
+4.1  Why Change Now?.....................................................................................................6 
+4.2  Change Without Pain..................................................................................................6 
+5.  Characteristics of the New Algorithms.............................................................................7 
+5.1  Risk Triad....................................................................................................................7 
+5.2  Model Features............................................................................................................8 
+6.  Mathematics......................................................................................................................9 
+6.1  Orders of Magnitude...................................................................................................9 
+6.2  Effective Zero...........................................................................................................10 
+6.3  AND Gates, OR Gates..............................................................................................10 
+7.  Probability of Failure......................................................................................................12 
+7.1  Failure Mechanisms..................................................................................................12 
+7.2  Exposure...................................................................................................................13 
+7.3  Mitigation..................................................................................................................16 
+7.4  Resistance.................................................................................................................17 
+7.5  Time Dependent Failure Mechanisms (TTF Calculations)......................................18 
+7.7  Time Independent Failure Mechanisms....................................................................30 
+7.8  Final PoF...................................................................................................................35 
+8.  Calibration and Validation..............................................................................................37 
+ 
+ 
+Revision History 
+ 
+Revision Edits Made Date 
+1.0 Original issue March 2006 
+2.0 Minor Edits March 2006 
+2.1 Corrections to TTF calculation, edited disclaimer on 
+title page. 
+May 2006 
+1.  Introduction 
+Scoring or ranking type pipeline risk assessments have served the pipeline industry well for 
+many years.  However, risk assessments are being routinely used today in ways that were not 
+common even a few years ago.  The new roles of risk assessments have prompted some 
+changes to the way risk algorithms are being designed.  The changes lead to more robust risk 
+results that better reflect reality and, fortunately, are readily obtained from data used in 
+previous assessments. 
+2.  Background 
+Scoring systems as a means of analysis have been around for a long time.  When knowledge 
+is incomplete and a decision structure is needed to simultaneously consider many factors, 
+scoring systems often appear.  Boxing matches, figure skating, beauty contests, financial 
+indices, credit evaluations, and even personality and relationship “tests” are but a few 
+examples. 
+Many risk assessments are based on such scoring systems.  They were often a simple 
+summation of numbers assigned to conditions and activities that are expected to influence 
+risks. Whenever more risk-increasing conditions are present with fewer risk-reducing 
+activities, risk is relatively higher.  As risky conditions decrease or are offset by more risk
+reduction measures, risk is relatively lower.     
+The form of these algorithms is normally some variation on: 
+CondA +CondB +… CondN = Relative Probability of Failure (or relative 
+Consequence of Failure) 
+Or sometimes: 
+(CondA x WeightA) + (CondB x WeightB) + … (CondN x WeightN) = Probability of 
+Failure 
+Where  
+CondX represents some condition or factor believed to be related to risk, evaluated for 
+a particular piece of pipeline.   
+WeightX represents the relative importance or weight placed on the corresponding 
+condition or factor—more important variables have a greater impact on the perceived 
+risk and are assigned a greater weight. 
+In the pipeline industry, relative risk scoring or ranking systems have been around for 
+decades.  Early published works from the late 1980’s and early 1990’s in scoring type risk 
+assessments include: 
+• Dr. John Kiefner’s work for AGA (via Battelle), 
+• Dr. Mike Kirkwood from British Gas, 
+• W. Kent Muhlbauer’s first edition of The Pipeline Risk Management Manual
+ , and 
+• Mike Gloven’s work at Bass Trigon. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+3
+Such scoring systems for specific pipeline operators can be traced back even further, notably 
+in the 1980’s with gas distribution companies faced with repair-replace decisions involving 
+problematic cast iron pipe.   
+Variations on this type of scoring algorithm have now been in common use by pipeline 
+operators for many years.  The choices of categorization into failure mechanisms, scale 
+direction (higher points = higher risk or vice versa) variables, and the math used to combine 
+variables are some of the differences among these type models.  
+This approach is often chosen for its intuitive nature, ease of application, and ability to 
+incorporate a wide-variety of data types. These methodologies have served the industry well 
+in the past.  Prior to 2000, such models were used primarily by operators seeking more formal 
+methods for resource allocation—how to best spend limited funds on pipeline maintenance, 
+repair, and replacement.  Risk assessment was not generally mandated and model results 
+were seldom used for purposes beyond this resource allocation.  There are of course some 
+notable exceptions where some pipeline operators incorporated very rigorous risk 
+assessments into their business practices, notably in Europe where such risk assessments 
+were an offshoot of applications in other industries or already mandated by regulators.   
+The role of risk assessment in the U.S. expanded significantly in the early 2000’s when the 
+Pipeline and Hazardous Materials Safety Administration (PHMSA) began mandating risk 
+ranking of all jurisdictional gas and liquid pipelines that could affect a High Consequence 
+Area (HCA).  Identified HCA segments were then scheduled for integrity assessment and 
+application of preventative and mitigative measures depending on the integrity threats 
+present.   
+3.  “Limitations” in Previous Approaches 
+The simple scoring assessment is still a useful screening and prioritization tools. However, 
+these earlier risk-ranking models were generally not intended for use in applications where 
+outside parties were requesting more rigorous risk assessments.  For example, risk assessment 
+has now been used in setting design factors, addressing land use issues, etc, while previously, 
+the assessment was typically used for internal decision support only.  
+Given their intended use, the earlier models did not really suffer from “limitations” since they 
+met their design intent.  They only now appear as limitations as the new uses are factored in.  
+Those still using older scoring approaches recognize the limitations brought about by the 
+original modeling compromises made.  Some of the more significant compromises arising 
+from the use of the simple scoring type assessments include: 
+• Without an anchor to absolute risk estimates, the assessment results are useful only in 
+a rather small analysis space.  Without a population of scores to compare, the results 
+offer little useful information regarding risk-related costs or appropriate responses to 
+certain risk levels. Results expressed in relative numbers are useful for prioritizing 
+and ranking but are limited in their ability to forecast real failure rates or costs of 
+failure. 
+• Difficult to directly link to integrity re-assessment timing.  Without additional 
+analyses, the scores do not suggest appropriate timing of ILI, pressure testing, direct 
+assessment, or other integrity verification efforts. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+4
+• Potential for masking of effects when simple expressions cannot simultaneously show 
+influences of large single contributors and accumulation of lesser contributors.  For 
+instance, an unacceptably large threat—very high chance of failure from a certain 
+failure mechanism—could be hidden in the overall failure potential if the 
+contributions from other failure mechanisms are very low.  This is because, in some 
+calculations, failure likelihood will only approach highest levels when all failure 
+modes are coincident in one location.  A very high threat from only one or two 
+mechanisms would only appear at levels up to their pre-set cap (weighting).  In 
+actuality, only one failure mode will often dominate the real probability of failure.  
+Similarly, the benefit of a very effective mitigation measure is lost when the 
+maximum benefit from that measure is artificially capped. 1 
+• Some older models are unclear as to whether they are assessing, for instance, the 
+likelihood of corrosion occurring or the likelihood of pipeline failure from 
+corrosion—a subtle but important distinction since damage does not always result in 
+failure.   
+• Some previous approaches have limited modeling of interaction of variables (now 
+required in some IMP regulations).  Older risk models often did not adequately 
+represent the contribution of a variable in the context of all other variables.  Simple 
+summations cannot properly integrate the interactions of some variables.   
+• Some models forced results to parallel previous leak history—maintaining a certain 
+percentage or weighting for corrosion leaks, third party leaks, etc—even when such 
+history might not be relevant for the pipeline being assessed.2 
+• Balancing or re-weighting was often required as models attempt to capture risk in 
+terms that represent 100% of the threat or mitigation or other aspect.  The appearance 
+of new information or new mitigation techniques required re-balancing which in turn 
+made comparison to previous risk assessments problematic. 
+• Some models can only use attribute values that are bracketed into a series of ranges.  
+This creates a step change relationship between the data and risk scores.  This 
+approximation for the real relationship is sometimes problematic 
+• Some models allowed only addition, where other mathematical operations (multiply, 
+divide, raise to a power, etc) would better parallel other engineering models and 
+therefore better represent reality 
+• Simpler math does not allow orders of magnitude scales and such scales better 
+represent real world risks.  Incident frequencies and related probabilities can 
+commonly range, for example, from nearly annually to less than 1 in ten million 
+chance per year.  
+Notes: 
+1. In general, the use of pre-set weightings or averaging of conditions can obscure higher 
+probabilities of one or more failure mechanisms,  The user of such models is usually 
+cautioned to either examine enough lower level results (prior to averaging or application 
+of weighting) to ensure this does not happen, or to migrate to an algorithm that will 
+prevent the masking.  
+2. The assumption of a predictable distribution of future leaks predicated on past leak 
+history is somewhat realistic, especially when a database with enough events is used 
+and conditions and activities are constant.  However, one can easily envision scenarios 
+where, in some segments, a single failure mode should dominate the risk score and 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+5
+result in a very high probability of failure rather than only some percentage of the total.  
+Even if the assumed distribution is valid in the aggregate, there may be many locations 
+along a pipeline where the pre-set distribution is not representative of the particular 
+mechanisms at work there.   
+Users of the older scoring type risk assessments should recognize these potential difficulties 
+in such methodologies.  These “limitations” were always recognized by serious practitioners 
+and workarounds could be implemented when more definitive applications were needed.  
+However, when the limitations are coupled with the need to get more out of the risk 
+assessments, the case for change becomes compelling. 
+4.  Improvement Opportunity 
+4.1  Why Change Now? 
+While the previous generation of algorithms served the industry well, the technical 
+compromises made can be troublesome or unacceptable in today's environment of increasing 
+regulatory and public oversight.  Risk assessments commonly become the centerpiece of any 
+legal, regulatory, or public proceedings.  This prompts the use of assessment techniques that 
+more accurately model reality and also produce risk estimates that are anchored in absolute 
+terms:  “consequences per mile year,” for example.  Fortunately, a new approach to algorithm 
+design can do this while making use of all previously collected data and not increasing the 
+costs of risk assessment.  The advantages of the new algorithms are that they can overcome 
+many of the previously noted limitations: 
+• More intuitive; 
+• Better models reality; 
+• Eliminates masking of significant effects; 
+• Makes more complete and more appropriate use of all available and relevant data ; 
+• Enhances existing algorithms to better comply with U.S. IMP regulations; 
+• Distinguishes between unmitigated exposure to a threat, mitigation effectiveness, 
+and system resistance—this leads directly to better risk management decisions; 
+• Eliminates need for unrealistic and expensive re-weighting of variables for new 
+technologies or other changes; and 
+• Flexibility to present results in either absolute (probabilistic) terms or relative 
+terms, depending on the user's needs. 
+4.2  Change Without Pain 
+A migration from an older style risk assessment to the new approach is quite straightforward.  
+An objective of the new approach is to retain the advantages of earlier approaches such as 
+their simplicity and intuitively transparent nature, and still avoid overly-analytic techniques 
+that often accompany more absolute quantifications of risk. In all risk analyses, the designer 
+of the assessment model must strike a balance between complexity and utility—using enough 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+6
+information to capture all meaningful nuances (and satisfy data requirements of all regulatory 
+oversight) but not information that adds little value to the analysis.   
+The new model described here uses the same data as previous approaches, but uses it in 
+different ways.  Weightings are not needed, but as with older models, valuations sometimes 
+must still need to arise from engineering judgment and expert experience when “hard data” is 
+not available.  The new valuations are, however, more verifiable and defensible since they are 
+grounded in absolute terms rather than relative.  Some time and energy will still need to be 
+invested into setting up the new assessment model with legitimate values for the systems 
+being assessed.  This investment is no greater than that needed to set up and maintain the 
+older models. 
+In recent risk model upgrades, the time needed to convert older scoring type risk assessment 
+algorithms into the new approach has averaged less than 40 hours. The new approach makes 
+use of previously-collected data to help with continuity and to keep costs of conversion low.  
+The primary algorithm modifications consist of simple and straightforward changes to 
+categorization of variables and the math used to combine them for calculating risk scores. 
+The new algorithms are easily set up and executed in spreadsheets, desktop databases—SQL 
+handles all routines very readily, or GIS environments.  No special software is needed. 
+5.  Characteristics of the New Algorithms 
+5.1  Risk Triad 
+The suggested basis for this model is to examine each failure mechanism (threat) in three 
+parts for: 
+• Exposure (unmitigated), 
+• Mitigation effects, and 
+• Resistance to failure. 
+These three elements make up the Risk Triad, for evaluating probability of failure (PoF).  
+They are generally defined as follows: 
+• Exposure = likelihood of force or failure mechanism reaching the pipe when no 
+mitigation applied, 
+• Mitigation = actions that keep the force or failure mechanism off the pipe, and 
+• Resistance = the system’s ability to resist a force or failure mechanism applied to the 
+pipe. 
+The evaluation of these three elements for each pipeline segment results in a PoF for that 
+specific segment. 
+An intermediate level, termed “Probability of Damage”—damage without immediate 
+failure—also emerges from this approach.  Using the first two terms without the third—
+ exposure and mitigation, but not resistance—yields the probability of damage. 
+Probability of Damage (PoD) = f (exposure, mitigation) 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+7
+Probability of Failure (PoF) = f (PoD, resistance) 
+This avoids a point of confusion sometimes seen in previous assessments.  Some older 
+models are unclear as to whether they are assessing the likelihood of damage occurring or the 
+likelihood of failure—a subtle but important distinction since damage does not always result 
+in failure.  Calculation of both PoD and PoF values creates an opportunity to gain better 
+understanding of their respective risk contributions. 
+This three part assessment also helps with model validation and most importantly, with risk 
+management.  Fully understanding the exposure level, independent of the mitigation and 
+system’s ability to resist the failure mechanism, puts the whole risk picture into clearer 
+perspective.  Then, the role of mitigation and system vulnerability are both known 
+independently and also in regards to how they interact with the exposure.  Armed with these 
+three aspects of risk, the manager is better able to direct resources more appropriately. 
+5.2  Model Features 
+Other characteristics of this model distinguish it from previous risk assessment approaches 
+and include the following. 
+1. Measurement Scales 
+Mathematical scales that simulate the logarithmic nature of risk levels are employed to 
+fully capture the orders-of-magnitude differences between “high” risk and “low” risk.  
+The new scales better capture reality and are more verifiable—to some extent, at least.  
+Some exposures are measured on a scale spanning several of orders of magnitude—“this 
+section of pipeline could be hit by excavation equipment 10 times a year, if not 
+mitigated (annual hit rate = 10)” and “that section of pipeline would realistically not be 
+hit in 1000 years (0.001 annual hit rate).”   
+The new approach also means measuring individual mitigation measures on the basis of 
+how much exposure they can independently mitigate.  For example, most would agree 
+that “depth of cover,” when done as well as can be envisioned, can independently 
+remove almost all threat of third party damage.  As a risk model variable, it is 
+theoretically perhaps a variable that can mitigate 95-99% of the third party damage 
+exposure.  If buried deep enough, there is very little chance of third party damage, 
+regardless of any other mitigative actions taken.  “Public Education” on the other hand, 
+is recognized as an important mitigation measure but most would agree that, 
+independently, it cannot be as effective as depth of cover in preventing third party 
+damages.   
+Improved valuation scales also means a more direct assessment of how many failures can 
+be avoided when the pipeline is more resistant or invulnerable to certain damages. 
+2. Variable Interactions 
+This model uses combinatorial math that captures both the influences of strong, single 
+factors as well as the cumulative effects of lesser factors.  For instance, 3 mitigation 
+measures that are being done each with an effectiveness of 20% should yield a combined 
+mitigation effect of about 49%.  This would be equivalent to a combination of 3 measures 
+rated as 40%, 10%, and 5% respectively, as is shown later. In other cases, all aspects of a 
+particular mitigation must simultaneously be in effect before any mitigation benefit is 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+8
+achieved.  An example is high patrol frequency with low effectiveness or a powerful ILI 
+but with inadequate confirmatory investigations. 
+These examples illustrate the need for OR and AND “gates” as ways to more effectively 
+combine variables.  Their use eliminates the need for “importance-weightings” seen in 
+many older models. 
+The new approach also provides for improved modeling of interactions:  for instance, if 
+some of the available pipe strength is used to resist a threat such as external force, less 
+strength is available to resist certain other threats.  
+3. Meaningful Units 
+The new model supports direct production of absolute risk estimates.  The model can be 
+calibrated to express risk results in consistent, absolute terms:  some consequence per 
+some length of pipe in some time period such as “fatalities per mile year.”  Of course, this 
+does not mean that such absolute terms must be used.  They can easily be converted into 
+relative risk values when those simpler (and perhaps less emotional) units are preferable.  
+The important thing is that absolute values are readily obtainable when needed. 
+6.  Mathematics  
+6.1  Orders of Magnitude 
+As noted, logarithmic scales are used to better characterize the range of failure probabilities.  
+This is a departure from how most older scoring models approach risk quantification.  It is a 
+necessary aspect to properly mirror real-world effects and express risk estimates in absolute 
+terms. 
+Since logarithms are not a normal way of thinking for most, a more intuitive substitute is to 
+speak in terms of orders of magnitude.  An order of magnitude is synonymous with a factor 
+of 10 or “10 times” or “10X.”  Two orders of magnitude means 100X, and so forth, so an 
+order of magnitude is really the power to which ten is raised.  This terminology serves the 
+same purpose as logarithms for the needs of this model.  So, a range of values from 10E2 to 
+10E-6 (102 to 10-6) represents 8 orders of magnitude (also shown by:  log(10E2) – log(10E-6) 
+= 2-(-6) = 8).  This PoF model measures most mitigation effectiveness and resistance to 
+failure in terms of simple percentages.  The simple percentages apply to the range of 
+possibilities:  the orders of magnitude.  So, using an orders of magnitude range of 8, 
+mitigation that is 40% effective is reducing a an exposure by 40% of 8 orders of magnitude 
+which has the effect of reducing PoF by 3.2 orders of magnitude.  For example, if the initial 
+PoF was 0.1—the event was happening once every 10 years on average—it would be reduced 
+to 0.1 / 10(40% x 8) = 0.1 / 10 3.2 = 6.3E-5.  The mitigation has reduced the event frequency by 
+over 1000 times—only one in a thousand of the events that would otherwise have occurred 
+will occur under the influence of the mitigation.   
+Numbers for mitigated PoF will get very, very small whenever the starting point (unmitigated 
+PoF) is small:  1000 times better than a “1 in a million” starting point is very small; 1000 
+times better than a “1 in a 100” starting point is not so small.  See also mitigation. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+9
+It might take some out of their comfort zone to begin working with numbers like this.  If so, 
+relative scales are easily created to be surrogates for the complex numbers.  However, having 
+access to the complex—and more correct—values at any time will add greatly to the risk 
+model’s ability to support a wide range of applications. 
+Creating a correct range of orders of magnitude for a model is part of the tuning or calibration 
+process. 
+6.2  Effective Zero 
+For some calculations, a lower limit or “effective zero” is needed to make the mathematical 
+relationships perform properly.  An effective zero is also a concept grounded in reality.  
+Intelligent minds are never absolutely certain of anything.  There is always some very slim 
+possibility of almost anything.  So, the effective zero can be seen as assigning a value to what 
+we mean when we say “never.”  For instance, to most, a chance of an event of around 1 in a 
+trillion or perhaps 1x10-12 is the equivalent of saying “never.”  This then would be the 
+“effective zero” value to use in the risk assessment equations.  There are some subtleties 
+involved in selecting this value, as will become apparent when some risk values are 
+generated.  The value is also subject to change when a risk model is calibrated to produce 
+results in absolute terms such as failures per mile-year. 
+6.3  AND Gates, OR Gates 
+The probabilistic math used to combine variables to capture both the effects of single, large 
+contributors as well as the accumulation of lesser contributors is termed “OR” & “AND” 
+“gates.”  Their use in pipeline risk assessment modeling represents a dramatic improvement 
+over most older methods.  This type of math better reflects reality since it uses probability 
+theory of accumulating impacts to 
+• Avoid masking some influences; 
+• Captures single, large impacts as well as accumulation of lesser effects; 
+• Shows diminishing returns; 
+• Avoids the need to have pre-set, pre-balanced list of variables; 
+• Provides an easy way to add new variables; and 
+• Avoids the need for re-balancing when new info arrives. 
+OR Gates 
+OR gates imply independent events that can be added.  The OR function calculates the 
+probability that any of the input events will occur.  If there are i input events each assigned 
+with a probability of occurrence, Pi, then the probability that any of the i events occurring is: 
+P = 1 – [(1-P1) * (1-P2) * (1-P3) *…*(1-Pi)] 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+10
+OR Gate Example: 
+To estimate the probability of failure based on the individual probabilities of failure for stress 
+corrosion cracking (SCC), external corrosion (EC) and internal corrosion (IC), the following 
+formula can be used. 
+Pfailure = OR[PSCC, PEC, PIC] = PSCC OR PEC OR PIC 
+= OR [1.05E-06, 7.99E-05, 3.08E-08] 
+= 1- [(1-1.05E-06)*(1-7.99E-05)*(1-3.08E-08)] 
+= 8.10E-05 
+The OR gate is also used for calculating the overall mitigation effectiveness from several 
+independent mitigation measures.  This function captures the idea that probability (or 
+mitigation effectiveness) rises due to the effect of either a single factor with a high influence 
+or the accumulation of factors with lesser influences (or any combination). 
+Mitigation %  = M1 OR M2 OR M3….. 
+= 1 - [(1-M1) * (1-M2) * (1-M3) *……..*(1-Mi)] 
+= 1 – [(1-0.40) * (1-0.10) * (1-0.05)] 
+= 49% 
+or examining this from a different perspective,  
+Mitigation % = 1 – [remaining threat] 
+Where remaining threat = [(remnant from M1) AND (remnant from M2) AND 
+(remnant from M3)] … 
+AND Gates
+ AND gates imply “dependent” measures that should be combined by multiplication.  Any 
+sub-variable can alone have a dramatic influence.  This is captured by multiplying all sub
+variables together.  For instance, when all events in a series will happen and there is 
+dependence among the events, then the result is the product of all probabilities.  In measuring 
+mitigation, when all things have to happen in concert in order to gage the mitigation benefit, 
+this means a multiplication—therefore, an AND gate instead of OR gate.  This implies a 
+dependent relationship rather than the independent relationship that is implied by the OR 
+gate. 
+AND Gate Example: 
+Here, the modeler is assessing a variable called “CP Effectiveness” (cathodic protection 
+effectiveness) where confidence in all
+ sub-variables is necessary in order to be confident of 
+the CP Effectiveness—[good pipe-to-soil readings] AND [readings close to segment of 
+interest] AND [readings are recent] AND [proper consideration of IR was done] AND [low 
+chance of interference] AND [low chance of shielding] . . . etc.  If any sub-variable is not 
+satisfactory, then overall confidence in CP effectiveness is dramatically reduced.  This is 
+captured by multiplying the sub-variables.   
+When the modeler wishes the contribution from each variable to be slight, the range for each 
+contributor is kept fairly tight.  Note that four things done pretty well, say 80% effective 
+each, result in a combined effectiveness of only ~30% (0.8 x 0.8 x 0.8 x 0.8) using straight 
+multiplication.   
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+11
+7.  Probability of Failure 
+The most compelling definition of probability is “degree of belief” regarding the likelihood 
+of an event occurring in a specified future period.  Probability is most often expressed as a 
+decimal ≤ 1.0 or a percentage ≤ 100%.  Historical data, usually in the form of summary 
+statistics, often partially establishes our degree of belief about future events.  Such data is not, 
+however, the only source of our probability estimates.  
+Probability is often expressed as a forecast of future events.  In this application, the 
+expression has the same units as a measured event frequency, ie events per time period.  
+When event frequencies are very small, they are, for practical purposes, interchangeable with 
+probabilities:  0.01 failures per year is essentially the same as a 1% probability of one or more 
+failures per year.  When event frequencies are larger, a mathematical relationship is used to 
+convert them into probabilities, ensuring that probabilities are always between 0 and 100%.   
+The pipeline risk assessment model described here is designed to incorporate all conceivable 
+failure mechanisms.  It is then calibrated using appropriate historical incident rates, tempered 
+by knowledge of changing conditions.  This results in estimates of failure probabilities that 
+match the judgments and intuition of those most knowledgeable about the pipelines, in 
+addition to recent failure experience. 
+7.1  Failure Mechanisms 
+This model recognizes that the two general types of failure mechanisms—time dependent and 
+time independent—require slightly different calculation routines.  Time dependent 
+mechanisms of corrosion and fatigue can be initially measured in terms of how much damage 
+they are causing over time.  Mils per year (mpy) is a common measure of corrosion metal 
+loss and can also be used to measure crack growth rates if some simplifying assumptions are 
+used.  The initial “damage rate” measurement will then be used to calculate a time-to-failure 
+(TTF) and then a probability of failure (PoF), perhaps in failures/mile/year.  TTF and PoF can 
+be estimated using common engineering and statistical relationships, either very complex 
+(fracture mechanics, finite element analyses, etc) or with simple approximations (% of 
+Barlow-required thickness, etc). 
+For time-independent failure mechanisms such as third party damage, weather, human error, 
+and earth movement events, the process is a bit simpler.  Constant failure rate or random 
+failure rate events are assessed with a simple “frequency of occurrence” analysis.  The 
+estimated frequency of occurrence of each time-independent failure mechanism can be 
+directly related to a failure probability—PoF—and then combined with the PoF’s from the 
+time-dependent mechanisms. As previously noted, the frequency values and probability 
+values are numerically the same at the low levels that should be seen in most pipelines.   
+Time-independent failure modes are assumed to either cause immediate failure or create a 
+defect that leads to a time-dependent failure mechanism. 
+As an example of failure mechanism categorization, ASME B31.8 Appendix S nomenclature 
+identifies time-dependent threats as External Corrosion (EC), Internal Corrosion (IC), Stress 
+Corrosion Cracking (SCC), and fatigue.  Time independent threats are Third Party damage 
+(TP), Incorrect Operations (IO), weather and other outside forces such as earth movement 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+12
+events (WOF) and Equipment failures (EQ, classified as “random”). Also noted are potential 
+manufacturing (MFG) and construction (CON) issues as contributors to failure potential.  In 
+this modeling approach, all possible weaknesses are best captured as variables impacting the 
+resistance—the ability of a pipeline segment to resist failure when exposed to a threat—rather 
+than as threat categories since they are not themselves failure mechanisms.   
+The model described here supports any logical categorization of threats or failure 
+mechanisms.  The following table summarizes one categorization scheme. 
+Table 7.1-1 Failure Mechanism Categories 
+Failure 
+Mechanism 
+Mechanism 
+Type 
+Third Party, 
+geohazards, 
+human error, 
+sabotage, theft 
+Time
+independent 
+Probability Model Structure 
+(failure rate) = [unmitigated event frequency] / 10[threat reduction] 
+Where [threat reduction] = f (mitigation effectiveness, 
+resistance) 
+Ext corrosion, 
+Int corrosion,  
+Fatigue, 
+SCC 
+Time
+dependent 
+(failure rate in year one) = 1 / (5 x TTF2) or 1 - EXP(-1 / TTF) 
+or other user-defined relationship,  where 
+TTF = 1 / [(available pipe wall) - (wall loss rate) x (1 – 
+mitigation effectiveness)] 
+Equipment 
+failure 
+Time
+independent (unit failure rate) x (number of units) 
+Equipment failure can often be included as part of the other mechanisms, where valves, 
+flanges, separators, etc are treated as the same as pieces of pipe but with different strengths 
+and abilities to resist failure.  Large rotating equipment (pumps, compressors) and other 
+pieces will often warrant independent assessment. 
+Under the assumption that most forecasted failure rates will be very small, this document will 
+often substitute “probability of failure” (PoF) for “failure rate.”  So, the two basic equations 
+used are modified from the table above and become: 
+PoF time-indep = [unmitigated event frequency] / 10[threat reduction] 
+where  
+[threat reduction] = f (mitigation, resistance) 
+PoF time-dep = f (TTF)   
+where 
+TTF  
+And then: 
+= “time to failure” 
+= (available pipe wall) / [(wall loss rate) x (1 – mitigation)] 
+PoF = f(PoF time-indep, PoF time-dep) 
+Terms and concepts underlying these equations are discussed in the following sections. 
+7.2  Exposure 
+“Exposure” is the name given to this model’s measure of the level of threat to which the 
+pipeline segment is exposed, if absolutely no mitigation measures were present.  It can be 
+thought of as a measure of how active a failure mechanism is in the pipeline’s environment.  
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+13
+Each failure mechanism contributes some threat exposure to each pipeline segment.  
+Exposure is measured differently for the two different categories of failure mechanisms: 
+• MPY for degradation or time-dependent mechanisms include: –External corrosion, –Internal corrosion, –Fatigue, and –SCC. 
+• Events per length-time (mile-year, for instance) for time independent / random 
+mechanism include: –Third party, –Incorrect operations, –Weather,  –Land movements (geohazards), –Equipment failures, and –Theft/sabotage. 
+7.2.1 MPY 
+For time-dependent threats, the unmitigated exposure, measured in mpy, is often easy to 
+conceptualize, as is discussed in a later section.  The mpy values for all of these threats lead 
+to an estimate of Time to Failure (TTF).  TTF is defined as the time period before failure 
+would occur, under the assumed wall loss and available strength assumptions.  TTF is an 
+intermediate calculation leading to a probability estimate.   
+TTF = (available pipe wall) / [(wall loss rate) x (1 – mitigation effectiveness)].   
+The relationship between probability of failure and TTF is established by the model designer 
+(see discussion in later section). 
+Integrity verifications (pressure test or ILI) can “re-set” the clock at the measured wall 
+thickness, overriding any assumed wall losses.  Mpy is then applied to the new measured wall 
+thickness to determine again when failure theoretically would occur (under very conservative 
+assumptions). 
+7.2.2  Events per Length-Time 
+For time-independent threats, exposure should also be quantified independently of any 
+mitigation.  Since historical data and typical pipeline experience does not include mitigation
+free scenarios, this type of analysis may seem unusual.  However, quantifying threats in this 
+manner provides a better understanding of the exposure and helps in tuning the model to 
+actual experience.  
+The concept of measuring a threat as if there was absolutely no mitigation applied normally 
+requires a bit of “imagineering.”  For example, in the case of third party damage, one must 
+envision the pipeline in a completely unmarked ROW (actually indistinguishable as a ROW), 
+with no one-call system in place, no public education whatsoever, and buried with only a few 
+millimeters of cover—just barely out of sight.  Then, a “hit rate” is estimated—how often 
+would such a pipe be struck by agricultural equipment, homeowner activity, new 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+14
+construction, etc.?  This exercise is actually very illuminating in that it forces one to 
+recognize the inherent threat exposure without the often taken-for-granted role of mitigation.   
+A range of possibilities can be useful in setting boundaries for assigning exposure levels to 
+specific situations.  A process for estimating a range of exposure levels is   
+• Envisioning the worst case scenario for a completely unprotected, specific length of 
+pipe and extrapolating (or interpolating) that scenario as if it applied uniformly over a 
+mile of pipe and  
+• Envisioning the best case scenario and extrapolating (or interpolating) that scenario as 
+if it applied uniformly over a mile of pipe.   
+Examples for Third Party Damage Potential 
+• Example worst case scenario:  2500 ft of pipe with 1" cover, no signs, no information 
+available to excavators, located in an active farming and construction zone with 
+potential for line strikes every week.  Assessor assigns a value of 50 hits per year for 
+2500’ = 100 hits/mi-yr  
+• Example best case scenario:  10 miles of pipe in controlled, uninhabited desert, no 
+utilities, area with limited access.  Assessor assigns 0 hits on 10 miles in 100 years = 
+0.001 hits/mi-yr 
+In order to help anchor all estimates, a guidance chart can be used:  
+Table 7.2.2-1.  Exposure Levels 
+Failures/yr 
+Years to Fail 
+Approximate Rule Thumb  
+1,000,000 0.000001 Continuous failures 
+100,000 
+0.00001 fails ~10 times per hour 
+10,000 
+1,000 
+0.0001 fails ~1 times per hour 
+0.001 fails ~3 times per day 
+100 
+10 
+0.01 fails ~2 times per week 
+0.1 fails ~1 times per month 
+1 
+0.1 
+100 fails ~1 per 100 years 
+1 fails ~1 times per year 
+10 fails ~1 per 10 years 
+0.01 
+0.001 1,000 fails ~1 per 1000 years 
+0.0001 10,000 fails ~1 per 10,000 years 
+0.00001 100,000 fails ~1 per 100,000 years 
+0.000001 
+1,000,000 One in a million chance of failure 
+0.0000000001 1,000,000,000 Effectively, it never fails 
+It is sometimes difficult to imagine the lower ends of the exposure scale.  Values implying 
+frequencies like once every 100,000 years or 10,000,000 years are not normally mentioned in 
+the pipeline industry.  The reality, however, is that these are real and valid numbers for many 
+stretches of pipeline.  A 0.1 mile stretch of pipeline with one exposure (hit or near miss) in 80 
+years implies a frequency of 0.00125 (once every thousand years).  If there were no 
+exposures in 80 years—and many lines do exist for decades with no exposures—then one 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+15
+could reasonably assign a frequency of 1/100,000 or higher.  When there is little or no 
+historical data, a comparable situation and/or judgment can be used. 
+With practice, several distinct advantages of the approach become apparent: 
+• Estimates can often be validated over time through comparison to actual failure rates 
+on similar pipelines.  
+• Estimate values from several causes are directly additive.  For example, many 
+external force threats such as falling objects, landslide, subsidence, etc, each with 
+their own frequency of occurrence can be added together for an overall exposure 
+level. 
+• Estimates are in a form that consider segment-length effects and supports PoF 
+estimates in absolute terms (failures per mile-year) when such units are desired. 
+• Avoids need to standardize qualitative measures such as “high,” “medium,” and 
+“low.”  Experience has shown us that such standardizations often still leave much 
+room for interpretation and also tend to erode over time and when different assessors 
+become involved. 
+• Can directly incorporate pertinent company and industry historical data. 
+• When historical data is not available, this approach forces subject matter experts 
+(SME) to provide more considered values.  It is more difficult to present a number 
+such as 1 hit every 2 years, compared to a qualitative labels such as “high.” 
+Many geohazards are already commonly expressed in units that are directly linked to event 
+frequency.  Recurrence intervals for earthquakes, floods, and other events can be used to 
+establish exposure. 
+7.3  Mitigation  
+Threat reduction occurs either through reducing the exposure to the threat—mitigation—or 
+reducing the failure likelihood in the face of threats or resistance.  
+In most cases in this model, a percentage is assigned to a mitigation measure that reflects its 
+possible impact on risk reduction.  For example, a value of 90% indicates that that measure 
+would independently reduce the failure potential by 90%.  A mitigation range for each 
+measure is set by the best-case amount of mitigation the variable can independently 
+contribute.  So, the “best” possible level of mitigation is an estimate of how effective the 
+measure would be if it was done as well as can be envisioned.  A very robust mitigation can 
+theoretically reduce the threat level to a very low level—sometimes independently 
+eliminating most of threat.     
+In order to capture the belief that mitigation effects can be dominated by either strong 
+independent measures or by accumulation of lesser measures, OR gate math is used, as 
+previously discussed. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+16
+Two methods of applying mitigation benefit are used in this model:   
+• For time-dependent mechanisms:  exposure x (1-mit) where mit = simple %  
+• For time-independent mechanisms:  exposure / (mit) where mit = simple % applied to 
+an order of magnitude range 
+As noted in the discussion of “orders of magnitude” (Section 6.1), the mitigation 
+effectiveness is modeled as reducing exposure in proportion to its % through the full 
+exposure scale.  So, for time independent mechanisms, mitigation that is 50% effective on a 
+scale spanning 6 orders of magnitude means that exposure is effectively reduced 1,000 times 
+(3 orders of magnitude).  As was pointed out, this means that very small exposures turn into 
+very, very small threats under the influence of strong mitigation. This fails to capture the 
+notion of diminishing returns—the doctrine that mitigation effectiveness is diminished as 
+more and more is applied and the exposure is effectively reduced to close to zero.  The 
+diminishing returns analogy is not embraced here because most exposures are measured in 
+incident rates (over time or distance or both).  A rate or count of incidents seems less 
+sensitive to the idea of disproportionate effectiveness.  If 90% mitigation eliminates 9 out of 
+the next 10 possible incidents, then it is not relevant if those next 10 potential incidents occur 
+in one year or one thousand years. 
+An underlying premise in assigning values, is that mitigation and vulnerability can work 
+together to eliminate most of the threat. 
+7.4  Resistance 
+Resistance, as the second component of threat reduction—along with mitigation—allows 
+ready distinction between the damage potential and the failure potential.  Resistance is simply 
+the ability to resist failure in the presence of the failure mechanism.  For time-dependent 
+mechanisms, it is a measure of available strength, including: 
+• Wall thickness, 
+• Wall thickness “used up” for known loadings, 
+• Possible weaknesses in the wall, and 
+• Material strength including toughness.  
+For time-independent mechanisms, resistance includes the above factors plus considerations 
+for external loadings: 
+• Buckling resistance, 
+• Puncture resistance, 
+• Diameter to wall thickness (D/t) ratio, and 
+• Geometry.  
+This is where the model considers most construction and manufacture issues involving 
+longitudinal seams, girth welds, appurtenances, and metallurgy, as discussed in a later 
+section. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+17
+7.5  Time Dependent Failure Mechanisms (TTF Calculations) 
+As previously noted, the underlying form of this calculation is as follows: 
+PoF time-dep = f (TTF)   
+where 
+TTF  
+= “time to failure” 
+= (available pipe wall) / [(wall loss rate) x (1 – mitigation 
+effectiveness)] 
+TTF is the time until the pipe leaks, given the estimated pipe wall thickness and the rate of 
+wall loss from the failure mechanisms.  This calculation involves many considerations and 
+several steps as discussed below. 
+7.5.1  Effective Pipe Wall 
+An evaluation of pipe strength is critical to risk assessment and plays a large role in 
+evaluating failure probability from all mechanisms, but especially the time-dependent 
+mechanisms of corrosion and fatigue.   
+Pipe wall thickness as a measure of pipe strength and ability to resist failure incorporates pipe 
+specifications, current operating conditions, recent inspection or assessment results, unknown 
+pipe properties such as toughness and seam condition, as well as known or suspected stress 
+concentrators and special external loading scenarios. This model captures these in a variable 
+called “effective pipe wall.” 
+Aspects of structural reliability analysis (SRA) are implicit in this approach since probability 
+of defects is being overlaid with stresses or loads.  A very robust SRA will use probability 
+distributions to fully characterize the loads and resistances-to-loads, while this simplified 
+approach uses point estimates.  Simplifications employed here allow more direct calculations 
+instead of Monte Carlo type routines often used in the more robust SRA calculations. 
+Measured pipe wall thickness could be used directly to calculate remaining strength 
+(available wall) if we have confidence that  
+• The measurement captures all defects that currently exist. 
+• There are no imperfections/weaknesses in the steel. 
+• There are no unintended stresses that are “using up” some strength.  
+Realistically, all measurements have limitations and many pipelines will have some age-of
+manufacture issues as well as other issues that make us question the true available pipe 
+strength, regardless of what a wall thickness measurement suggests.  Issues include low freq 
+ERW seam, inclusions, laminations, low toughness, girth weld processes, weakenings from 
+other threat exposures, etc.  Effective pipe wall captures such uncertainty about true pipe 
+strength by reducing the estimated pipe wall thickness in proportion to uncertainty about 
+possible wall weaknesses. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+18
+7.5.2  Estimates of Effective Pipe Wall 
+This is a more complex aspect of the risk evaluation—necessarily because the use of 
+available and anticipated information must be done in several iterative steps.  It is a fairly 
+comprehensive analysis, incorporating the following:   
+• Pipe specification; 
+• Last measured wall thickness; 
+• Age of last measured wall thickness; 
+• Wall thickness “measured” (implied) by last pressure test; 
+• Age of last pressure test; 
+• Estimated metal loss mpy since last measurement; 
+• Estimated cracking mpy since last measurement; 
+• Maximum depth of a defect surviving at last pressure test;  
+• Maximum depth of a defect surviving at normal operating pressure (NOP) or last 
+known pressure peak; 
+• Detection capabilities of last ILI, including data analyses and confirmatory digs; and 
+• Penalties for possible manufacturing/construction weaknesses (see following section 
+for details). 
+In simultaneously considering all of these, the model is able to much more accurately respond 
+to queries regarding the “value” of performing new pressure tests or new ILI.  The value is 
+readily apparent as are suggested re-assessment intervals.  All data and all assumptions about 
+exposure and mitigation are easily viewed and changed to facilitate model tuning and/or 
+what-ifs. 
+The analysis begins with what is known about the pipe wall.  In general, an owner will 
+always know: 
+1. 
+2. 
+That the pipe is not failing at its current pressure and stress condition (NOP). 
+The wall thickness that was last measured (visual, UT, ILI, implied by pressure test, 
+etc or default to nominal design). 
+The beginning point of the analysis is these two factors.  In addition, the owner (in the US) is 
+now also normally required by regulation to estimate the potential for damages to the pipe 
+since the last inspection.  That estimated damage rate is used to calculate an effective wall 
+thickness at any time after the last measurement was taken.  An integrity verification 
+inspection or test will adjust the estimated effective wall thickness. 
+7.5.3  Steps to Effective Wall Estimate 
+The steps required in the model’s time-dependent failure mechanism analysis are as follows: 
+1. NOP-based wall
+ :  
+Produce an estimated wall thickness, based on leak-free operation 
+at current NOP.  This may include an estimate of the deepest non-leaking defect that 
+could be present at this pressure. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+19
+2. Pressure test based wall
+ : 
+ Calculate an estimated wall thickness based on the most 
+recent pressure test.  This might be the original post-construction test.  It can also be a 
+recent higher-than-normal pressure to which the segment has been exposed. 
+3. ILI based wall
+ :  Calculate an estimated wall thickness based on the most recent 
+inspection.  This is normally ILI, but can also be bell hole exams where reliable and 
+comprehensive wall thickness measurements were taken.  The accuracy of the 
+inspection for all types of possible defects should be a part of this estimate.   
+4. Exposure
+ :  Produce an estimate of steel metal-loss / crack-growth in the absence of 
+any mitigation.  This includes at least external corrosion, internal corrosion, and 
+cracking and should reflect, for instance in the case of external corrosion, the 
+corrosion rate of the pipe if it was buried uncoated and unprotected in the segment’s 
+environment. 
+5. Mitigation
+ :  Evaluate the effectiveness of current mitigation measures.  This 
+effectiveness will be used to directly offset (reduce) the steel deterioration rate that 
+would otherwise occur. 
+6. Estimated pipe wall
+ :  
+Calculate an estimated pipe wall.  This is the larger of the pipe 
+wall thickness estimates based respectively on: 
+• NOP (and largest surviving defect), 
+• Last pressure test minus possible metal-loss / crack-growth since, and 
+• Last inspection minus possible metal-loss / crack-growth since. 
+Additional estimates might be warranted when metal-loss and cracking scenarios are 
+evaluated separately. 
+7. Effective pipe wall
+ :  
+Assign a penalty to reduce pipe strength whenever there is the 
+possibility of manufacture or construction issues that would reduce the pipe’s 
+strength.  This is an adjustment factor used to move from an estimated pipe wall to an 
+effective pipe wall. 
+8. Resistance
+ :  
+Calculate the available pipe wall by comparing the effective pipe wall 
+with the wall thickness needed to contain NOP. 
+9. TTF
+ :  Calculate the TTF by dividing the metal-loss / crack-growth rate into the 
+available wall.  This value can directly support an IMP, as is discussed below. 
+10. PoF
+ :  convert the TTF into a PoF for the current year. This value is combined with the 
+time-independent failure assessments for an overall PoF for each pipeline segment. 
+It is recognized that this modeling approach makes several simplifying assumptions that do 
+not fully account for the complex relationships between anomaly sizes, types, and 
+configurations with leak potential, rupture potential, and fracture mechanics theories.  In 
+addition, metal loss and cracking phenomena have been shown to progress in non-linear 
+fashion—sometimes alternating between rapid progression and complete stability.  A 
+constant deterioration rate is used only as a modeling convenience in the absence of more 
+robust predictive capabilities.  It should be noted that remaining strength calculations and 
+TTF estimates should not be taken as precise values but rather as relative measures that 
+characterize overall system behavior but may be significantly inaccurate for isolated 
+scenarios. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+20
+Nonetheless, after accounting for uncertainty and application of appropriate safety factors, 
+the TTF values directly support integrity management in a way that previous approaches 
+could not.  A re-assessment interval is readily apparent from these calculations.  Integrity 
+assessment schedules can be directly linked to calculations that fully integrate all pertinent 
+data. 
+More details of these overall steps follow: 
+NOP-Based Wall 
+For a burst-model, the wall thickness implied by leak-free operation at NOP can be calculated 
+by simply using Barlow relationship with NOP to infer a minimum wall thickness. Since 
+defects can be present and not be causing failure, a value for “max depth of defect surviving 
+NOP” can also be assumed.  This value is somewhat arbitrary since the depth of defect that 
+can survive at any pressure is a function also of the defect’s overall geometry.  The assumed 
+wall thickness based solely on operating leak-free at NOP can be calculated as follows: 
+pipe_wall_barlow_NOP = ([NOP]*[Diameter]/(2*[SMYS]*1000) - (max depth defect 
+surviving NOP) 
+This simple analysis accounts for defects that are present but are small enough that they do 
+not impact effective pipe strength by using the variable “max depth of defect surviving 
+NOP.”  The analysis could be made more robust by incorporating a table or chart of defect 
+types and sizes that could be present even though the pipe has integrity at NOP.  An 
+appropriate value can be selected knowing for instance that a pressure test at 100% SMYS on 
+16", 0.312, X52 pipe could leave anomalies that range from 90% deep 0.6" long to 20% deep, 
+12" long.  All combinations of geometries having deeper and/or longer dimensions would 
+fail.  Curves showing failure envelopes can be developed for any pipe. 
+Pressure-Test Based Wall Thickness Estimate 
+To conclude that there is greater wall thickness than implied by NOP, additional information 
+must support that premise.  The above analysis can be repeated using the test pressure instead 
+of the NOP.  Then, using an estimated deterioration rate (discussed below) from the time of 
+test until today, another pipe wall estimate is produced.  This can be compared to the estimate 
+from the NOP. If this conservatively estimated deterioration since the test suggests a larger 
+wall thickness than implied by the Barlow-NOP calculation, then this value can be used 
+instead of the minimum wall needed for NOP per Barlow.   
+ILI-Based Wall Thickness Estimate 
+The calculation next uses the last actual measurement taken, including the uncertainty 
+surrounding the measurement and the age of the measurement.  This measured pipe wall 
+value will override the other wall thickness estimates (from NOP and since the last pressure 
+test), if the measured value shows with confidence that even more pipe wall is available.  The 
+capability of the measurement tool and the validation process is important.  Better 
+knowledge, obtained by either greater detection capability of all possible defects and/or a 
+more aggressive validation program, reduces uncertainty in the measurement.  As with the 
+estimate based on pressure test, this estimate should include possible degradation of pipe wall 
+since the measurement. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+21
+If an integrity assessment, including accuracy considerations, indicates “no anomaly,” there 
+could nonetheless be an anomaly present that is below the detection capability of the 
+assessment.  However, it is not normally appropriate to simply assume that such below
+detection anomalies exist everywhere.  Such ultra-conservatism will be counterproductive to 
+risk management.  It is more appropriate to use knowledge of possible failure mechanisms, 
+applied conservatively, to estimate possible defects.   
+The modeler can use an assessment of integrity inspection capability (IIC) to adjust all 
+measured or inferred wall thicknesses.  The adjustment should be based on the largest 
+surviving defect after the most recent inspection.  It can also somewhat consider the severity 
+of the defect—how much might it contribute to likelihood of failure.  For instance, a detected 
+lamination is normally not a significant threat to integrity unless it is very severe or also has 
+the potential for blistering or crack initiation, both of which are very rare.      
+A complication in evaluating IIC is that several defect types must be considered.  IIC is not 
+consistent among inspection tools and defect types, so some generalizations are needed.  
+Examples of defect types include metal loss (internal or external corrosion), axial cracks, 
+circumferential cracks, narrow axial corrosion, long seam imperfections, SCC, dents, buckles, 
+laminations, inclusions.  Inspection or assessment techniques often focus on one or two of 
+these with limited detection capabilities for the others.  Since most ILI assessments provide 
+unequal information on cracking versus metal loss, a two-part calculation is required in the 
+TTF assessment.  This is illustrated in Example 1 below. 
+A matrix can be set up capturing the beliefs about IIC.  For example, see Table 7.5.3-1, 
+below. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+22
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+23
+ Table 7.5.3-1.  IIC Benefit Matrix 
+  Defect Type Max Surviving Defect 
+Inspection 
+Type 
+Validation 
+(Pig-Digs) 
+Protocol 
+External 
+Corrosion 
+Internal 
+Corrosion 
+Axial 
+Crack 
+Circum 
+Crack 
+Dent/ 
+Gouge 
+Ovality/ 
+Buckling Laminations  
+Metal 
+Loss Crack 
+Aggressive  5 5 100 10 20 50 50   5 100 
+Routine  10 10 100 50 50 50 50   10 100 MFL high 
+resolution Min  15 15 100 100 50 50 50   15 100 
+Aggressive  10 10 100 50 50 50 50   10 100 
+Routine  15 15 100 100 50 50 50   15 100 MFL std 
+resolution Min  20 20 100 100 50 50 50   20 100 
+Ultrasound 5 5 100 100 20 20 5   5 100 
+TFI  20 20 5 10 50 50 50   20 5 
+EMAT  50 50 10 10 50 50 10   50 10 
+Ultrasound shear wave crack 
+tool 50 50 10 10 50 50 10   50 10 
+Caliper, sizing, gauging, 
+inertial 100 100 100 100 5 5 100   100 100 
+Press test  5 5 5 5 2 2 2   5 5 
+ 
+This matrix is a simplification and is based on one analyst’s interpretation of information available at the time of this writing.  It should be 
+modified when the user has better information available.   
+ 
+Values shown represent defect sizes (depths normally), expressed as percentage of wall thickness, that might remain after the assessment.  A 
+value of 100 means that the assessment technique has no detection capabilities for that defect type.  The last 2 columns aggregate the various 
+defects into two categories and assign an IIC to each category based on the capabilities for the specific defects.  As an example of the use of this 
+matrix, consider a pipeline that has been evaluated with a High Res MFL tool with a routine validation protocol.  The corresponding maximum 
+surviving defects for this assessment are 10% of wall for metal loss and 100% of wall for axial cracks.  So, no information regarding crack 
+presence is obtained. 
+ 
+Exposure 
+Estimating an un-mitigated exposure level for time-dependent threats is more straightforward 
+than for time-independent mechanisms.  In the case of corrosion, the pipe metal’s reaction to 
+its environment establishes a rate for metal loss by corrosion.  For cracking, the relationship 
+is more complex, involving the environment, stress levels, and metallurgy, but still readily 
+visualized. 
+Each segment of pipeline would have varying degrees of exposure to each of the time
+dependent mechanisms: 
+• External corrosion, 
+• Internal corrosion, 
+• Fatigue cracking, 
+• SCC, and 
+• Possibly, slow-acting geohazards. 
+Exposure to corrosion and fatigue type phenomena are expressed as metal degradation rates, 
+mils-per-year (mpy) of pipe wall loss (1 mil = 1/1000th of an inch).  Although metal loss is 
+actually a loss of mass and is perhaps best characterized by a loss of volume, using a one
+dimensional measure—depth of metal loss—conservatively assumes “narrow and deep” 
+corrosion versus “broad and shallow.”  It is, after all, the loss of effective wall thickness
+ that 
+is of primary importance in judging impending loss of integrity for time-dependent failure 
+mechanisms.  MPY is also the metric commonly used by corrosion control experts to 
+characterize metal loss. In some cases, considerations of volume or weight loss instead of 
+thickness loss might be warranted—note the difference in depth associated with a 1 lb/year 
+metal loss when a pitting mechanisms is involved versus a generalized surface corrosion. 
+To fully estimate cracking potential, concepts of fracture mechanics must be applied, 
+including possible presence of defects, type of defects, stress levels including stress 
+concentrators, metallurgy, etc.  As one important variable—sometimes as the only measure of 
+exposure—fatigue cycles are usually measured, both in terms of their magnitude and 
+frequency.  The two general types of fatigue loadings commonly seen are large magnitude 
+low frequency cycles as is typically seen in internal pressure fluctuations and smaller 
+magnitude but more frequent cycles typically seen in traffic or temperature loading scenarios.   
+All scenarios involving all combinations of frequency and magnitude should be identified.  
+Most will be directly additive.  In other cases, OR gate math applied to all simultaneous 
+causes ensures that any scenario can independently drive fatigue and also show the 
+cumulative effect of several lesser exposures. 
+SCC can be considered a special form of degradation involving both cracking and corrosion.  
+Since aggressive corrosion can actually slow SCC crack-growth rates, the interplay of 
+cracking and corrosion phenomena can be difficult to model. Recent literature has identified 
+factors that seem to be present in most instances of SCC.  These factors can be used to 
+estimate an exposure level, expressed in units of mpy, and this exposure can be added to 
+internal corrosion, external corrosion, and fatigue crack-growth, for an overall exposure level.   
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+24
+Other forms of environmental cracking, blistering, or other damages, should also be 
+considered in the exposure estimates for time-dependent mechanisms. 
+As a modeling convenience, mpy and mils lost assumes uniform damage rate.  This is 
+normally not the case.  Allowances for more aggressive, shorter duration damage rates might 
+be warranted.   
+Theoretically, the mpy rate applies to every square centimeter of a pipe segment—the 
+degradation could be occurring everywhere simultaneously.  This is because the model sees 
+no difference among any of the square centimeters of pipe wall within the segment—all 
+characteristics are constant, as was set by the dynamic segmentation process.   
+There are now available, several published sources suggesting possible defaults or estimates 
+for corrosion rates and even crack growth rates. 
+Mitigation 
+Mitigation includes anything that reduces the potential for or aggressiveness of the failure 
+mechanism.  The best possible value for each mitigation variable is determined based on that 
+variable’s perceived ability to independently mitigate the threat.  
+A distinction is made between mitigation and resistance as was earlier noted. 
+Common mitigation measures for external corrosion include coating and application of 
+cathodic protection (CP).  These two are usually employed in parallel.  Since each can 
+independently prevent or reduce corrosion, an OR gate is appropriate in assessing the 
+combined effect.  Some practitioners rate these measures as equally effective, in theory at 
+least. Using the assumption of independent effects with the associated OR gate math, the 
+combined measures of CP and coating done to 80% and 85% level of effectiveness 
+respectively, would reduce external corrosion by 1-(1-0.8)x(1-0.85) = 97%.  So, an 
+unmitigated corrosion rate of 16 mpy, would be reduced to about 0.5 mpy after mitigation in 
+this scenario. 
+When a coating is assessed as, say 80% effective in reducing corrosion, this actually means 
+that 80% of the coated pipe is fully protected and 20% has essentially no protection from 
+coating.  This is analogous to a weather forecast where a 40% chance of rain does not mean 
+that the rain is somehow 40% of what it would otherwise be.  It actually implies that 40% of 
+the viewing area will probably see some rain while 60% will see none.  Nonetheless, as a 
+modeling convenience, the mitigation effectiveness as it is used here is numerically reducing 
+the rate of the exposure rather than predicting certain lengths of pipe wall will corrode and 
+others will not. 
+CP effectiveness is measured by a variety of factors including various pipe-to-soil voltage 
+and other over-line surveys, survey protocols (on, off, de-polarized, etc) interpretation of 
+survey results, rectifier inspections, interference potential, and others.  The interactions of CP 
+variables can suggest OR gate math in some cases and AND gate math in others. 
+Typical internal corrosion mitigation measures include: 
+• Internal coatings, 
+• Monitoring via coupon or other probe, 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+25
+• Inhibitor injection, 
+• Regular cleaning,  
+• Sweeping of liquid accumulations, and 
+• Product treatments. 
+These are generally independent measures and can be related using OR gate math.  A critical 
+inclination angle calculation can be used to supplement and support exposure and mitigation 
+estimates for internal corrosion. 
+Mitigation against fatigue is achieved through reduction of cycles—directly reducing the 
+exposure level.  Use of pipe casings or other load transfer techniques would reduce the 
+transmission of the exposure to the pipe and could be considered mitigation measures.  
+Otherwise, choice of metallurgy, wall thickness, and stress level reduce crack growth 
+potential from a resistance standpoint (although there is some gray area for classifying certain 
+factors as resistance vs. mitigation). 
+Estimated Pipe Wall 
+The estimated pipe wall reflects the best estimate of how much metal is present and available 
+to resist failure.  Either cracking or metal loss may dominate the calculation, depending upon 
+the estimated aggressiveness of each and the date/type of assessments performed.  For many 
+risk assessments, the two phenomena are best tracked independently. 
+Remaining wall thickness, or maximum surviving defect sizing, can be estimated using some 
+simple relationships like the Barlow equation specified in US pipeline regulations.  This has 
+limitations since it does not accurately capture the effects of defect size (depth versus length 
+and width are important) or type (cracking phenomena are not captured by the Barlow 
+relationship).  When increased accuracy is required, metal loss sizing routines such as 
+RSTRENG and ASME B31.8G or fracture mechanics relationships can be substituted.  It is 
+recommended that the more robust calculations be used when data is available since the 
+Barlow will produce overly conservative results.  For example, in a 72% design factor 
+pipeline, with a 12.5% wall thickness manufacturing tolerance, loss of only 15% wall would 
+predict failure.  Ignoring the manufacturing tolerance is often suggested in order to reduce the 
+over-conservatism when Barlow is used (and this is consistent since ASME recommendations 
+are to use nominal wall value in Barlow calculations). 
+Effective Pipe Wall 
+An estimated pipe wall thickness has now been created.  The effective pipe wall calculation 
+begins with this value and adjusts or penalizes it for anything that implies a reduced strength 
+in that metal.  A potential weakness is modeled as being equivalent to reduced wall thickness. 
+Possible manufacturing/construction weaknesses are identified for each pipeline segment.  
+Typical age-of-manufacture/construction issues include 
+• Increased longitudinal seam susceptibilities (low freq ERW, for instance); 
+• Hard spots; 
+• Laminations; 
+• Low toughness; 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+26
+• Girth weld weaknesses; 
+• Miter joints; 
+• Wrinkle bends; 
+• Stress concentrators; 
+• Sub-standard appurtenances; and 
+• Any other possible weaknesses. 
+The amount of weakness actually produced by these factors is often very situation-specific.  
+Generalizations are used to avoid the sophisticated finite element analyses that would be 
+required to fully model all of the possibilities.  Some generalizations are available from 
+industry standards and even regulations.  Note the seam factor used in U.S. regulations for 
+pipeline design—this is an example of an adjustment value. 
+The effective pipe wall estimate can now be used for available wall calculation (time
+dependent mechanisms) and in external force resistance models (third party pipe wall 
+puncture resistance and landslide buckling resistance, for example).  However, nominal pipe 
+wall is often used in certain external force variables such as D/t and “geometry” factor since 
+their influences are very coarse.  Using effective pipe wall everywhere can also lead to 
+troublesome to circular calculations, so some simplifications are often needed. 
+The following examples illustrate some derivations of the effective pipe wall estimates. 
+Example 1 
+A non-leaking pipeline segment has a nominal wall thickness of 0.320” after accounting for 
+the manufacturing tolerance of 12.5%.  The Barlow calculation using NOP shows that a 
+minimum of 0.210” is required to contain normal operating pressure.  (Considering also the 
+max defect depth that could survive at this pressure, assuming a long corrosion defect, would 
+bring the minimum wall thickness down substantially.)  The conservatively estimated 
+deterioration rate in this segment is 10 mpy from a combination of 8 mpy metal loss and 2 
+mpy cracking.  Since it has been 15 years since an evaluation has been done, the calculated 
+pipe wall is 0.320 – 15* 10/1000 = 0.170”.  The minimum wall implied by NOP is higher, so 
+the current estimate of pipe wall thickness is 0.210”.  Noting the difference in estimates, the 
+mpy deterioration rate is assumed to be too conservative and should be adjusted downward.   
+This is done by examining and adjusting exposure and/or mitigation effectiveness. 
+A high resolution MFL ILI tool with routine confirmation excavations (follow-up) is used to 
+assess integrity.  This technique is assumed to have no capabilities to detect longitudinal 
+crack-like indications and +/-10% accuracy of metal loss anomalies, so 
+[integ_insp_capability1] = 10 and [integ_insp_capability2] = 100 where 100 means that a 
+defect up to 100% of pipe wall could exist undetected by the inspection.  The assessment 
+indicates a minimum wall in this segment of 0.300”.  So, ILI-estimated wall thickness for 
+metal loss is 0.300 x 90% = 0.270”.  For cracking, the available wall could actually be 0.00” 
+since the integrity assessment is assumed to have no detection capabilities.  The pipe wall 
+estimate based on possible metal loss is 0.270”, derived from ILI measurement and accuracy. 
+Since we have confirmed that the conservatively estimated deterioration rate has not 
+occurred, we can now adjust the estimated wall with cracking to be (wall after metal loss) – 
+(mils potentially lost by cracking) = 0.270 – (2 mpy x 15 years) = 0.240”.  Since there is not a 
+measured value to override this estimate, then it shall become the value for pipe wall 
+estimated based on possible cracking. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+27
+These values along with the corresponding damage rates are used to set re-assessment 
+intervals for cracking and metal loss mechanisms respectively.   
+For an overall pipe wall estimate, we can now use the smaller or 0.240”.  This is then 
+adjusted for possible metal weaknesses to get effective pipe wall. 
+Without the ILI, the pipe wall would have been assumed to be 0.210”.  So, the ILI improved 
+the risk picture by removing uncertainty by providing a better estimate.  This was done by a 
+direct metal loss measurement and an inferred adjustment to possible cracking.  The ILI 
+information also prompts a revision of the deterioration rate, further reducing the 
+conservatism brought on by uncertainty. 
+Example 2 
+Same scenario as above except that a 1.25 x MOP pressure test is the chosen integrity 
+assessment technique.  This technique is modeled to have a capability to find all defect types 
+to the extent that they fail at the test pressure.  The Barlow calculation using the test pressure 
+indicates a minimum effective wall thickness of 0.263”.  (Note that a 1.5 x MOP test would 
+have led to a 0.315” wall.)  So, 0.263” is the value for pipe wall thickness estimate to be used 
+in obtaining effective pipe wall.   
+This example assumes that a more robust inspection is achieved via pressure test, so risk is 
+reduced more than in the previous example where a defect-specific ILI was used.  That 
+assumption will not always be valid. 
+Example 3 
+This example shows where the analysis might at first seem counterintuitive until all aspects 
+are simultaneously considered.  Consider the following two segments from a very old, large 
+diameter gathering pipeline: 
+Table 7.5.3-2.  Data for Example 3 
+Segment 
+Number 
+OD (in) 
+Wall 
+(in) 
+100 30.625 0.320 
+Grade
+ ? 
+SMYS for Max 
+Press Calc (psi) 
+SMYS for 
+Min Wall 
+Remain (psi) 
+106 30 0.374 X52 
+24000 (default) 
+52000 
+52000 
+52000 
+Note that the SYMS assumed for maximum operating pressures is 24,000 psig (per US 
+regulations) but the assumed SYMS for minimum wall estimates is 52,000 psig, the 
+documented value of nearby segments.  Using this latter value results in smaller remaining 
+wall thicknesses and should be used to maintain conservativeness in the assessment. 
+From inspection, some might say that segment 106, with a heavier wall would have a lower 
+PoF, if all other factors are equivalent.  After all, 106 would have a much higher maximum 
+pressure based on the available SMYS information.  However, given that nothing beyond 
+“leak free at NOP” can be conservatively assumed, the apparently heavier wall of 106 is not 
+germane to the current analysis.  Conservatively estimated corrosion rates over many years, 
+without offsetting integrity verifications, have essentially made the two segments’ wall 
+thicknesses roughly equivalent.  They are not exactly equivalent, because the slightly larger 
+diameter of 100 causes the assumed wall thickness of 100 to be slightly larger than 106’s. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+28
+Table 7.5.3-3.  Data for Example 3 
+Segment 
+Number 
+Press 
+Test Min 
+Wall 
+(psig) 
+100 
+0 
+Max Op 
+Press Min 
+Wall (in) 
+Max 
+Calc P 
+(psig) 
+Min Wall 
+for NOP 
+(in) 
+0.103 502 0.077 
+Max Defect 
+Depth 
+Surviving at 
+NOP (in) 
+PoF 
+106 
+0.0530 
+0 
+0.101 1297
+ 6.8% 
+ 0.075 
+0.0545 
+7.3% 
+In this type of analysis, higher grade (stronger) steels tend to have a higher (worse) PoF 
+compared to lower strength steels.  This is true because the mpy deterioration applies equally 
+to all strengths of steel.  So, heavier wall steel has the longest TTF, regardless of strength.  If 
+two wall thicknesses are equal, the one with the lower strength will have a longer TTF 
+because it begins with a thicker wall under the “leak free at NOP” initial premise—i.e., it 
+takes more wall thickness of a lower strength steel to contain the operating pressure. 
+When pipe grade is unknown, the often-recommended default of 24,000 psig is not 
+conservative when calculating remaining wall thickness.  Since the mpy deteriorates high 
+strength steel as readily as low strength, using a higher SMYS default results in lower 
+remaining wall and quicker TTF—a more conservative assessment overall. 
+Resistance (Available Pipe Wall) 
+The difference between the available pipe wall thickness and the thickness required for 
+anticipated loads (internal pressure, external loads) is the thickness of metal that can be lost 
+before failure occurs.  This estimated “extra” wall thickness represents a safety margin—
+ failure potential is reduced as this increases since the TTF will be increased.  This “available 
+wall” can be also used in subsequent estimates of resistance to other failure mechanisms such 
+as external forces.  Similarly, the available wall estimate can be reduced on the basis of other 
+results from the risk assessment.  For instance, when external forces are “using up” more pipe 
+strength, this reduces strength available to withstand other failure mechanisms. 
+Again, some significant simplifying assumptions underlie this value and should be carefully 
+considered by the modeler. 
+TTF 
+This represents the time period before failure would occur, under the assumed wall loss and 
+available strength assumptions.  TTF = (available pipe wall) / [(wall loss rate) x (1-mitigation 
+effectiveness)].  For these time-dependent mechanisms, TTF is an intermediate calculation 
+leading to a PoF estimate.   
+A new integrity inspection can “reset the clock” for this calculation as can any new 
+information that would lead to a revised wall thickness estimate. 
+From TTF to PoF 
+The PoF is calculated as the chance of one or more
+ failures in a given time period.  The 
+degradation rate is assumed to be occurring everywhere simultaneously.  Therefore, the 
+number of degradation points in a segment does not theoretically impact the estimate.  In 
+reality, there is an uncertainty associated with each degradation estimate and larger segments 
+will have more possible degradation points and increased chance of outliers—locations 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+29
+having larger than estimated degradation rates. The calculated probability assumes that at 
+least one point in the segment is experiencing the estimated degradation rate and no point is 
+experiencing a more aggressive degradation rate. 
+The relationship between TTF and year one PoF is an opportunity to include segment length 
+as a consideration, at the modeler’s discretion.  A relationship that shows increasing PoF as 
+segment length increases is defensible since the longer length logically means more 
+uncertainty about consistency of variables and more opportunities for deviation from 
+estimated degradation rates. 
+The PoF calculation estimates the time to failure, measured in time units since the last 
+integrity verification, by using the estimated metal loss rate and the theoretical pipe wall 
+thickness and strength.  It is initially tempting to use the reciprocal of this days-to-failure 
+number as a leak rate—failures per time period.  For instance, 1800 days to failure implies a 
+failure rate of once every (1800/365) = 4.9 years or 1/(1800/365) = 0.202 leaks per year.  
+However, a logical examination of the estimate shows that it is not really predicting a 
+uniform leak rate.  The estimate is actually predicting a failure rate of ~0 for 4 years and then 
+a nearly 100% chance of failure in the fifth year. 
+Some type of exponential relationship can be used to show the relationship between PoF in 
+year one and TTF.  The relationship:  PoF = 1-EXP(-1/ TTF)  where PoF = (probability of 
+failure, per mile, in year one) produces a smooth curve that never exceeds PoF = 1.0 (100%), 
+but produces a fairly uniform probability until TTF is below about 10 (i.e., a 20 yr TTF 
+produces ~5% PoF).  This does not really reflect the belief that PoF’s are very low in the first 
+years and reach high levels only in the very last years of the TTF period.  The use of a factor 
+in the denominator will shift the curve so that PoF values are more representative of this 
+belief.  A Poisson relationship or Weibull function can also better show this, as can a 
+relationship of the form PoF = 1 / (fctr x TTF2) with a logic trap to prevent PoF from 
+exceeding 100%.  The relationship that best reflects real world PoF for a particular 
+assessment is difficult if not impossible to determine.  Therefore, the recommendation is to 
+choose a relationship that seems to best represent the peculiarities of the particular 
+assessment, chiefly the uncertainty surrounding key variables and confidence of results.  The 
+relationship can then be modified as the model is tuned or calibrated towards what is believed 
+to be a representative failure distribution. 
+7.7  Time Independent Failure Mechanisms 
+As previously noted, the underlying form of this calculation is as follows: 
+PoF = [unmitigated event frequency] / 10[threat reduction] 
+Where  
+[threat reduction] = f(mitigation effectiveness, resistance) 
+Threats modelled as mostly random in nature, third party, theft, sabotage, incorrect 
+operations, geohazards, etc, are sensitive to segment length since the threat is assumed to be 
+uniformly distributed across the entire segment.  This results in a leak rate per length per time 
+period (such as PoF / mile / year) which is then multiplied by the segment length to get a 
+failure probability for the segment.  A direct multiplication or summation of failure 
+probabilities is acceptable when numerical values are very small. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+30
+One of the keys to the new approach in risk assessment is to capture the orders of magnitude 
+spans between risk levels.  Older scoring systems did not normally provide for this. 
+The best possible value for each mitigation variable is determined based on that variable’s 
+perceived ability to independently mitigate the threat. The mitigation is applied to the 
+possible span—orders of magnitude—of exposure. 
+Discussion and notes regarding some assessments for specific failure mechanisms follow.  
+The patterns shown in these examples can be applied to any other time-independent failure 
+mechanism.  Mitigation measures are often already defined from previous risk assessments 
+and their assessed effectiveness can be used in this model. 
+7.7.1  Third Party 
+Third party damage is modeled as a time-independent failure mechanism.  It is assumed that 
+any third party damage that does not result in an immediate failure, initiates a time-dependent 
+mechanism such as corrosion or fatigue.   
+Exposure
+ Exposure is the estimated events/per mile-year from excavation activity and certain other 
+external forces. Unless considered elsewhere in the model, impacts should include:  
+• Excavation—farm equipment, construction equipment, dredging, boring. piles. 
+• Traffic—vehicles, rail, marine, air. 
+• Falling objects—trees, utility poles, buildings, meteors, etc (anything that could fall 
+onto the ROW). 
+External impacts—landslides, rock falls, etc—are normally considered in the Geohazard 
+assessment (see Section 7.3.3). 
+Mitigation
+ Mitigation = ƒ(cover, patrol, one-call, damage prevention program, ROW condition, 
+signs/markers, etc.).  Some comments on measuring effectiveness of some specific mitigation 
+measures follow: 
+• One-call effectiveness is generally an AND gate between sub-variables such as 
+system type, notification requirement, and response.  The AND gate is applicable 
+since all sub-variables together represent the effectiveness of the mitigation. 
+• The mitigation of patrol is normally an AND gate between patrol type and frequency.  
+Patrol type implies an effectiveness and includes combinations of different types—
+ ground-air, for example. 
+• External protection is typically an OR gate between cover, warning mesh/tape, 
+exterior protection since each measure can act independently to reduce the PoF. 
+• Casing is a mitigation if it is thought of as something added to a pipeline system.  If it 
+is considered part of the pipeline system, then it is a resistance.  Either categorization 
+can be used since either will have the same impact on PoF. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+31
+Maximum effectiveness of each mitigation measure should represent the modeler’s belief 
+about how much the failure potential is reduced by that measure independent of any other 
+measure.  For example, casing pipe or extreme depth of cover should probably warrant 95
+99% reduction in exposure levels. 
+Resistance 
+Resistance = ƒ(pipe wall thickness, pipe geometry, pipe strength, stress level, manufacturing 
+and construction issues).  The pipe wall thickness and material toughness can be used to 
+assess puncture resistance.  The geometry, diameter and wall thickness, can measure 
+resistance to buckling and bending.  Since internal pressure induces longitudinal stress in the 
+pipe, a higher internal pressure can indicate reduced resistance to external forces. 
+7.7.2  Incorrect Operations 
+The time-independent failure mechanism of human error is measured as “incorrect 
+operations.”  Specifically, the potential for failure directly precipitated by a ‘real time’ human 
+error, is measured here.  Examples of such failures include improper operation of valves 
+causing overpressure or disabling of control or safety devices.  Such failures usually require 
+that a sequence of unlikely events, including failure of highly reliable safety devices, all 
+occur.   
+As a modeling convenience and due to the normally consistent aspects of human error 
+reduction across all failure mechanisms, the role of possible human error in all other failure 
+mechanisms is often also assessed in one location in the risk analysis.  This includes the 
+potential for error in design and maintenance activities related to safety systems, corrosion 
+control, third party damage prevention, and others.  Results of this analysis are used to adjust 
+mitigation effectiveness estimates.  When human error potential is higher, mitigation 
+effectiveness is conservatively assumed to be lower.  For example, when procedures or 
+training are found to be inadequate, then effectiveness of corrosion control methods might be 
+more suspect; when instrument calibration and maintenance records are missing, 
+effectiveness of safety devices is questionable. 
+Exposure
+ For exposure estimates, abnormal, unintended, inappropriate actions that could lead to 
+pipeline failure are “events.”  Frequency of “events” is exposure.  Measures employed to 
+avoid an incident is mitigation.  Ability of the system to resist a failure when exposed to an 
+incident is resistance.  So, stress level is resistance as well as exposure and is appropriately 
+included in both aspects of the analysis.  The unmitigated exposure level for this mechanism 
+should be based on a completely untrained workforce, with no procedures in place, no 
+records of design or maintenance, no SCADA benefits, etc.  As with some other exposure 
+estimates, such an unmitigated scenario may required some imagination on the part of the 
+assessors. 
+Exposure level should include an assessment of all pressure sources that can overpressure the 
+pipeline segment of interest.  Sources of potential overpressure typically include source 
+pressure, thermal overpressure, and surges. All of these are modeled as real time human error 
+exposures.  Safety devices are ignored at this point in the analysis.  Each source is assigned 
+an event frequency, based on how often the overpressure event is theoretically possible.  
+When the threat is continuous, a pre-set value can be assigned.  An example is a pipeline that 
+is downstream of a pressure reducing regulator that prevents the high upstream pressure from 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+32
+affecting the downstream pipeline (remember, no benefit from the safety device is credited 
+yet).  When this high pressure source can overpressure the segment, the exposure is 
+continuous.  Surge potential can also be considered in this part of the model. 
+Mitigation
+ Mitigation measures typically thought to reduce failure potential include: 
+• Safety systems, 
+• Training,  
+• Procedures, 
+• Proactive surveying, 
+• Maintenance practices, 
+• Materials handling, 
+• Quality assurance, 
+• Hazard Identification, and 
+• Others. 
+Some of the less obvious mitigation measures are briefly discussed below. 
+[Surveys] is a mitigation variable that shows how much proactive information collection, 
+digestion, and reaction to new information is being done.  It overlaps aspects of surveys 
+employed in other threat mechanisms (CIS, aerial patrol, depth cover, etc) but additional 
+“credit” given here as evidence of overall corporate philosophy of proactively addressing 
+possible exposures.   
+[Maintenance practices] indicates a sensitivity to keeping things in high working order.  It 
+should be an AND gated variable combined with variables such as one measuring 
+effectiveness of safety devices, since the latter requires the former in order to realize its 
+full capability. 
+[Materials] captures the company’s processes to ensure correct materials are used.  This 
+includes material selection and control as replacements/additions to the system are made. 
+[QA] applies to quality control checks in design, construction, operations, and 
+maintenance.  The ability of such measures to reduce exposure can be assessed. 
+[HazID] captures programs that identify and prompt appropriate actions to avoid human 
+errors. 
+Resistance
+ The segment’s resistance to human error caused failures can be modeled as a function of: 
+• System safety factor, 
+• Stress level (% SMYS), 
+• Time-to-overpressure,  
+• Etc. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+33
+7.7.3  Geohazards 
+The potential for damages or failure from geologic or hydraulic forces, although a relatively 
+rare threat for most pipelines, can be the main risk driver for certain segments and a challenge 
+for risk assessment.   
+Exposure
+ One way to measure this exposure threats is to sum the contributions from each of three 
+geohazard categories:   
+Exposure = [geotech] + [hydrotech] + [seismic] 
+Where: 
+Geotech = [landslide probability] * [landslide severity] 
+Hydrotech = [erosion]+[subsidence]+[buoyancy]+[flood-bank erosion]+[flood
+undercut]+[debris loadings] 
+Seismic = [fault] + [liquefaction] 
+Fault = expected failure rate due to fault actions 
+Liquefaction = [peak ground acceleration (PGA)] * [soil suscept] 
+This general failure mechanism category includes mechanisms of two specific types: those 
+that produce constant forces and those that produce random events.  The constant forces can 
+be modeled as continuously “using up” available pipe strength, thereby reducing resistance to 
+other failure mechanisms.  Of high priority would be the identification of coincident 
+application of such geohazards with pipe weaknesses or higher exposures to other failure 
+mechanisms.  The forces generating random events are usually better modeled as non
+continuous. 
+The process for assigning PoF values to these phenomena should include the use of historical 
+incident rates and published recurrence interval data whenever available.   
+Mitigation
+ Mitigation measures are often phenomena-specific if not situation-specific and might require 
+special handling in the assessment.  Mitigation measures typically thought to reduce failure 
+potential include: 
+• Strain gauges,  
+• Barriers, 
+• Soil removal, 
+• Erosion control structures, 
+• Drain control, and 
+• Etc. 
+Resistance
+ Resistance can be assessed in a fashion similar to third party (refer to Section 7.7).  
+Resistance measures typically thought to reduce failure potential include: 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+34
+• Supports, 
+• Anchors, and 
+• Pipe designs. 
+7.8  Final PoF 
+All failure probabilities and risk valuations should be normalized spatially and temporally.  
+Units such as failures/mile-year are convenient for all mechanisms except equipment and 
+certain materials/construction issues.  In those cases, a segmentation strategy or assumptions 
+regarding anomalies per unit length can be used to normalize. 
+The relationship between leak frequency and failure probability is often assumed to be 
+exponential.  The exponential relationship fits many observed rare-event phenomena and is 
+frequently used in statistical analysis.   
+The probability of no events can be calculated from: 
+  P(X)EVENT =  [(f *t)^X  / X ! ] * exp (- f * t) 
+Where:   
+P(X)EVENT = probability of exactly X events 
+f = the average spill frequency for a segment of interest, events /year 
+t = the time period for which the probability is sought, years 
+X = the number of events for which the probability is sought, in the pipeline 
+segment of interest. 
+The probability for one or more events is evaluated as follows: 
+P(probability of one or more)EVENT = 1 – Probability of no spills 
+= 1 - P(X)EVENT 
+where X = 0. 
+At very small event frequencies, the probability values are equal to the event rates.  So, the 
+two can be used interchangeably until the event rates become higher. 
+In the risk assessment, a probability of failure is calculated for each pipeline segment for each 
+threat.  Under the assumption that each failure mechanism is basically independent, these 
+probabilities are combined through an OR gate equation to give an overall failure probability 
+for the segment.  The segment probabilities are combined to give an overall PoF.   
+PoF = f(PoF time-indep, PoF time-dep) 
+PoF values associated with each failure mechanism are combined using the widely accepted 
+premise in probability theory that the “chance of one or more failures by any
+ cause” is equal 
+to 1 minus “the chance of surviving cause A” times “the chance of surviving cause B” times,  
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+35
+etc.  So, for a model that has categorized threats into third party, TTF, theft/sabotage, 
+incorrect operations, and geohazard, the relationship would be: 
+PoF overall = 1-[(1-PoFthdpty) x (1-PoFTTF) x (1-PoFtheftsab) x (1-PoFincops) x (1
+PoFgeohazard)] 
+Where PX= Failure Probability associated with failure mechanism X (Prob of one or more 
+failures/ (mile*yr) or other appropriate units) 
+A simple summation of failure probabilities is acceptable when numerical values are very 
+small. 
+While the assumption of independence is made for purposes of probabilistic math, 
+dependences can also be modeled.  For example, the effective pipe wall calculated in the TTF 
+routines can be used in the resistance calculations for external forces.  Similarly, the effects 
+of external loadings can influence the “available wall” calculations in the TTF routines. 
+Combining Segments
+ Threats modeled as mostly random in nature including third party, theft, sabotage, incorrect 
+operations, geohazards, etc, are sensitive to segment length since the PoF is based on an 
+exposure per unit length.  So, longer length segments have more exposure and hence, more 
+PoF.  A simple multiplication of segment length by its PoF per unit length yields the 
+segment’s total PoF. 
+The PoF calculation from TTF is theoretically not segment-length-sensitive, for reasons 
+previous noted.  However, to further account for uncertainty in TTF estimates, including a 
+segment length consideration might be justified. 
+PoF Example  
+This example illustrates the normalizing of segment PoF values and their combination into an 
+overall PoF for a pipeline. 
+Table 7.8-1. PoF Example 
+PoF 
+Segment 
+Length (ft) 
+A1
+ 2000 
+Time
+Independent  
+(per mile-year) 
+0.0004
+ Time
+Dependent 
+(per year; 
+year 1) 
+5.60E-06
+ Total (per 
+year) 
+1.57E-04  
+Comments 
+A2
+ 20 
+0.01
+ 6.00E-07
+ 3.85E-05  
+A3
+ 600 
+0.0003
+ 2.50E-07
+ 3.43E-05  
+total 
+2620     
+2.30E-04 per year 
+4.63E-04 per mile-year 
+5.00E-04 benchmark, per mile-year 
+In this example, three segments of varying lengths have been assessed.  Each has a PoF for 
+time-dependent failure mechanisms and a PoF for time-independent failure mechanisms.  The 
+former is in units of probability per mile-year (or failures per mile-year) and the latter in units 
+of probability per year.  The time-independent value is normalized by multiplying by the 
+segment length in miles.  The total column shows the combined PoF for each segment, using 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+36
+an OR gate to combine the time independent and time dependent probabilities.  This shows 
+that the 20 ft segment A2 is more problematic than the 600 ft segment A3, even though the 
+latter is 30 times longer.  For a final PoF value representing all three segments, the segment
+specific PoF’s are combined using an OR gate.  This results in a PoF of 2.3E-4 for the 2620 ft 
+pipeline which equates to a value of 4.63E-4 failure rate per year.  This can be compared to a 
+benchmark value from, say, US pipeline OPS failure statistics, representing average, median, 
+worst-case, or any other comparative value.  In the example, the overall PoF suggests a 
+0.023% annual PoF for this 2620 ft which is approximately equal to the benchmark rate.  
+This example also illustrates the importance of incorporating length into the analysis at some 
+point.  Note that segment A2 is several orders of magnitude more likely to fail than the 
+others, but since it is a short length, its contribution does not overshadow the other segments 
+whose lower-PoF-but-for-longer-lengths values are equally important.  In this example, the 
+time-dependent PoF dominates the overall PoF. 
+8.  Calibration and Validation 
+For some applications of pipeline risk assessment, especially in the early stages, relative risk 
+values are the only values that will be required.  Relative values can often adequately support 
+prioritization and ranking protocols.  The need for calibration—tuning model output so that it 
+mirrors actual event frequencies—might be unnecessary in initial stages.  In that case, only 
+validation—ensuring consistent and believable output from the model—is required.   
+Prior to the need for PoF results expressed in absolute terms—failures per mile-year, for 
+instance—the PoF values can be stripped of their time period implication and be used as 
+relative numbers.  A 2.3% PoF does not mean a 2.3% annual
+ probability of failure until the 
+risk assessment has been calibrated—it only means a 2.3% chance of failure over some time 
+period.  This might be one year or one hundred years.  Until the calibration is done, the 2.3% 
+value can be used as a relative measure of PoF. 
+Experience has shown, however, that risk management permeates so many aspects of the 
+organization that a good risk model’s role will eventually be expanded.  As its output 
+becomes more familiar, new users and new applications arise.  Ultimately most assessments 
+will be asked to anchor their output in absolute if not monetary terms.  When this happens, 
+the need for both validation and calibration arises. 
+Incident history is one of the important pieces of evidence to consider when calibrating risk 
+assessment results.  This includes all incidences of measured metal loss, crack like 
+indications, damages found, anomalies detected, plus actual failures.  In most cases, 
+knowledge of all previous repairs will be relevant. 
+An incident impacts our degree of belief about future failure potential in proportion to its 
+relevance as a predictor.  Some will directly impact exposure estimates.  Even if it has little 
+or no direct relevance as a predictor, the related investigation would certainly yield 
+information useful in effective pipe wall calculations. 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+37
+A mechanism must exist to remove the “penalty” when there is no longer any relevance.  An 
+example would be where an ineffective coating is the root cause of a corrosion incident and 
+that coating is subsequently replaced.  Another example is a high incidence of third party 
+damages or near-misses associated with some land use that has since changed. 
+All PoF estimates can be calibrated by using relevant historical failure rates when available.  
+This generally involves the following steps: 
+• Perform detailed analysis of historical leak data.   
+• Evaluate data in the context of similar pipelines (similar environments and O&M 
+practices) in other companies. 
+• Determine relevance of each incident to all segments of pipeline.  
+• Use relevant data to calibrate or tune the algorithms so that absolute risk levels—
+ expressed in annualized costs, for example—can be produced. 
+Failures outside of the segment of interest might or might not be relevant so some historical 
+data should be adjusted on the basis of engineering judgment and experience.  
+If model results are not consistent with a chosen benchmark, any of several things might be 
+happening: 
+• Benchmark is not representative of the assessed segments, 
+• Exposure estimates are too high or too low, 
+• Mitigation effectiveness is judged too high or too low, and 
+• Resistance to failure is judged too high or too low. 
+The distinction between PoF and probability of damage (but not failure) can be useful in 
+diagnosing where the model is not reflecting reality.  Mitigation measures have several 
+aspects that can be tuned.  The orders of magnitude range established for measuring 
+mitigation is critical to the result, as is the maximum benefit from each mitigation, and the 
+currently judged effectiveness of each.  A trial and error procedure might be required to 
+balance all these aspects so the model produces credible results for all inputs. 
+Similar to the use of a benchmark for model validation, a carefully structured interview with 
+SME’s can also identify model weaknesses (and also often be a learning experience for 
+SME’s).  If an SME reaches a risk conclusion that is different from the risk assessment 
+results, a drill down into both the model and the SME’s basis of belief should be done.  Any 
+disconnect between the two represents either a model error or an inappropriate conclusion by 
+the SME.  Either can be readily corrected.  The objective should be to make the risk 
+assessment model house the collective knowledge of the organization—anything that anyone 
+knows about a pipeline’s condition or environment, or any new knowledge of how risk 
+variables actually behave and interact, can and should be captured into the analysis protocol. 
+Users should be vigilant against becoming too confident in using any risk model output.  
+Especially when such output is expressed in numbers that appear to be very precise, it is easy 
+to fall into an “illusion of knowledge.”  Regardless of the extent of the modeling rigor 
+employed, assumptions and simplifications are still needed in any analysis.  The uncertainty 
+Enhanced Pipeline Risk Assessment Part 1, Rev 2.1 – May 2006 
+© 2006 WKM Consultancy.  All rights reserved. 
+38
+surrounding a risk assessment cannot be eliminated and a model without some simplifications 
+is not justifiable in such a high uncertainty environment.  The very nature of extremely rare 
+events makes planning difficult.  For example, an event might be very precisely measured to 
+have a recurrence interval of 88years.  This is very useful information when the event is 
+compared to many other events with say, intervals of 2 years and 250 years.  However, the 
+once-every-88 year event could occur next year, in year 24, in year 67, or even twice in any 
+year. 
+Even though the more robust algorithms discussed here use almost all pertinent information, 
+they are still normally set up to receive and produce point estimates only.  In reality, many 
+variables will vary over time as well as along a pipeline.  To better model reality, the changes 
+in many parameters like pressure, soil resistivity, wall thicknesses, etc should be captured by 
+creating a distribution of the variations over time or space.  Such distributions can also at 
+least partially quantify the uncertainty surrounding all measurements.  The range of 
+possibilities for all pertinent variables must be understood and accounted for in producing the 
+risk estimates. 
