@@ -1,0 +1,74 @@
+Assesment Tool
+Pipeline Licensing Data												Pipeline Operating Conditions, Production Volumes and Chemistry																Probability of Unmititigated Internal Corrosion																	Pigging		Chemical				Probability of Mitigated Internal Corrosion								Monitoring & Inspection																														 Consequence Level	Soil Data					Coating Data										Inline Inspection						CP	External Corrosion Risk Score, Per License							Internal Corrosion Risk Score, Per License												
+												Production Rates					Operating Conditions		Gas Analysis		Oil/Liquid/Water Analysis																																											Health & Safety Impact							Environment Impact										Reputation Impact			Financial Impact																																			Unmitigated Risk						Mitigated Risk						
+Pipeline License	From Location	To Location	Status (Kermit)	Substance	Age (Years)	Diameter (mm)	Wall Thickness (mm)	Length (km)	Material 	Internal Protection	Licensed H2S (mol/kmol)	Liquid Production (m3/day)	Gas Production (e3m3/day)	Oil Production (m3/day)	Water rate (m3/day)	Water Cut %	Operating Pressure (kPa)	Operating Temperature (degrees C)	H2S (%)	CO2 (%)	Corrosive Bacteria Tested positive  Yes/No/Unknown	Oxygen Tested above threshold Yes/No/Unknown	Cl (mg/L)	Bicarbonates	Time to Detect Failure	Liquid Release (m3)	Gas Release (e3m3)	Superficial Gas Velocity m/s	Superficial Liquid Velocity m/s	Flow Regime	G10 pHCalculated	CO2 Partial Pressure (Kpa)	H2S Partial Pressure (Kpa)	G10 Corrosion Mechanism	G10 Maximum Corrosion rate mm/y	Remaining life Score of unmitigated Acid Gas corrosion, years	Probability level of unmitigated Acid Gas Corrosion	Probability level of unmitigated Under Deposit corrosion/Water Hold Up Damage	Probability level of unmitigated MIC corrosion Without UD Factor	Probability level of unmitigated MIC corrosion 	Probability Level of Oxygen Corrosion	Remaining life Score of unmitigated internal corrosion, years	Probability of Unmitigated Internal Corrosion	Unmitigated Internal Corrosion Probability Level	Pipeline Piggable	Pigging Assessment	Continuous Inhibition Assessment	Corrosion Residual Assessment	Corr Batch Assessment	Bio Batch Assessment	Mitigated Acid Gas Corrosion Rate	Mitigated Acid Gas Remaining Life	Mitigated Probability of Acid Gas Corrosion	Mitigated Probability of Under Deposit Corrosion/Water Hold Up	Mitigated Probability of MIC corrosion	Mitigated Probability Level of Oxygen Corrosion	Remaining life of Mitigated internal corrosion, years	Probability of Mitigated Internal Corrosion	Highest defect remaining	Pitting Measured Corrosion Rate (mm/y)	Type of Monitoring/Inspection	Date of Last Inspection	Mitigated Probability Level	Class location	Crossing/Proximity (100m) to roads/railways/residential	Road Crossing	Railway Crossing	Road Proximity	Railway Proximity	Health & Safety score	Environmentally sensitive area	Water body	Water Crossing Classification	100 m Buffer Crossing?	Creek crossing?	River crossing?	Pipe Volume [m³]	Released Liquid Volume (Rupture) [m³]	Released Liquid Volume(Pinhole) [m³]	Environment score  	Environmentally significant sensitive area	Military or Indian reserves	Reputation score	Repair/Replacement cost	Clean up Cost	Production loss ($) 	Total Cost $	Business score		Soil pH (pH2)	Base Saturation (%)	Drainage Ranking	Drainage	Soil Corrosivity Factor (/10)	External Coating Type	Pipeline Age	Coating Survey Completed (Yes/No)	Dig/Excavation Completed	Year of Coating Observation/Survey	# of Holidays or Defects found	Overall Coating Condition	Coating Type vs Temperature Factor	Coating Type vs Vintage Factor	Coating Condition Factor (/40)	ILI Date	External Defect Present	# of External Defects	% Depth	External Corrosion Rate (mm/yr)	ILI Factor (/10)	Cathodic Protection Deficiency (Yes/No) (/15)	Risk of External Corrosion Score (/75)	EC Risk Score	Consequence of Failure Raw Score	Consequence of Failure (/5)	Combined Score, EC and Consequence	Overall Score, EC Factors	Recommended Field Work	Unmitigated Probability	IC Risk Score	Consequence	Unmitigated Risk	Combined Score	Unmitigated Risk Ranking	Mitigated Probability	IC Risk Score	Consequence	Mitigated Risk	Combined Score	Mitigated Risk Ranking	Comments
+9995-1	D-093-K/094-A-11	D-093-K/094-A-11	Active	Sour Oilwell Effluent	24	323.9	7.9	0.303784784	Steel		10	0.787200772	69.64561776	0	0.787200772	100	668	14	2.35	3.87	Unknown	Unknown	6782	44	3 - 3 to 7 days	2.815889764	51.01678166	1.242541445	0.000122208	Slug	4.86	29.7728775	18.0791375	H2S	0.05	134	A	C	C	E	N/A	100.5	E	E	No	Poor	Poor	N/A	N/A	N/A	0.05	157.95	A	C	E	N/A	118.4625	E					E	1	Beatton River Access Road Buffer Crossing (35 metres)	No	No	Yes	No	3 Loss Time Injury >7 days	No		R1 - Low Significance	No	No	No	22.64849223	28.15889764	2.815889764	2 >1 m³ (s),  >10 m³ (non-s)	No 	No 	2 Neighbor Complaint	75000	100000	58502.31892	233502.3189	2 $100K to $750k	3			4	I - Imperfectly Drained	6.5	Unknown	24	No 	No 			Unknown	1	7	14.5							Yes	36	3	20	1	31	Low		E	5	3	E3	53	High	E	5	3	E3	53	High	Most Recent CP Report is 2017 [Predator] and only 20% of the assets were surveyed. Historically 80-90% compliant |
+#####
+Water Index	12.5
+Never	0
+Seasonal Saturation	3
+Seasonal Runoff	5
+Constant Saturation	7
+Moving Water	10
+Soil Index	12.5
+Solid Rock	1
+Significant Consolidation	2
+Moderate Consolidation	4
+Low Consolidation	7
+Unconsolidated	10
+History in Region	15
+no occurrence in region	0
+Historic Events have occurred (previous decade)	3
+Occasional occurrence in region (1 occurance in last 5 years)	5
+occurrence common in region (more than one occurance in last 5 years)	7
+occurrence common on pipeline (seasonal occurance)	10
+Activity in Region	30
+Not near right of way	1
+adjacent to Right of way	3
+within right of way	5
+adjacent to pipeline	7
+Over pipeline	10
+Slope Stability Factor	30
+Slope Angle Factor	25
+Exposure Length Factor	25
+Soil Mass/Bulk Density Factor	25
+Group 10 Water Classification Factor	25
+R0 - Insignificant	2
+R1 - Low Significance	4
+R2 - Moderate Significance	7
+R3 - High Significance	9
+R4 - Very High Significance	10
+L0 - Insignificant	1
+L1 - Low Significance	2
+L2 - Moderate Significance	5
+L3 - High Significance	7
+L4 - Very High Significance	8
+Lost Liquid Production	100
+0	1
+10	4
+50	6
+100	9
+500	10
+Waterbody Type Multiplier	
+R0 - Insignificant	0.5
+R1 - Low Significance	0.8
+R2 - Moderate Significance	1
+R3 - High Significance	1
+R4 - Very High Significance	1
+L0 - Insignificant	0.3
+L1 - Low Significance	0.5
+L2 - Moderate Significance	0.75
+L3 - High Significance	0.9
+L4 - Very High Significance	1
+Geotechnical Risk Range	
+0	1
+20	2
+40	3
+60	4
+75	5
+Consequence of Failure Range	
+0	1
+20	2
+40	3
+60	4
+80	5
