@@ -1,0 +1,75 @@
+Oil Reserves,,,Gas Reserves,
+,,,,
+Field Name,PINE CREEK,,Field Name,PINE CREEK
+Pool Name,SECOND WHITE SPECKS A,,Pool Name,SECOND WHITE SPECKS A
+Recovery Type,,,Sequence Code,0
+Oil In Place (m³),"4,204,200",,Sequence Code,0
+Multi Mechanics Pool Oil In Place (m³),,,Total Gas - Initial Gas In Place In Pool (e³m³),"534,000"
+Primary Recovery Factor,0.083,,Total Gas - Initial Gas In Place In Member Pool (e³m³),
+Enhanced Recovery Factor,,,Total Gas - Initial Producible Gas In Place Pool (e³m³),"347,000"
+Primary Pool Reserves,348900,,Total Gas - Initial Producible Gas In Place Member Pool (e³m³),
+Primary multi mechanics pool reserves,,,Total Gas - Cumulative Production (e³m³),"142,000"
+Enhanced Pool Reserves,,,Total Gas - Remaining Producible Gas (e³m³),"205,000"
+Enhanced multi mechanics pool reserves,,,Total Marketable Gas - Initial Established Marketable Gas Reserves In Pool (e³m³),"295,000"
+Total Pool Reserves (m³),"348,900",,Total Marketable Gas - Initial Established Marketable Gas Reserves In Member Pool (e³m³),
+Total Multi Mechanics Pool Reserves (m³),,,Total Marketable Gas - Cumulative Marketable Production (e³m³),"121,000"
+Cumulative Production (m³),"346,100",,Total Marketable Gas - Remaining Established Marketable Gas Reserves (e³m³),"174,000"
+Remaining Established Reserves (m³),"2,800",,Total Marketable Gas - Gas Type,COMBINED
+Crude Classification,LIGHT-MEDIUM,,Free Gas - Initial Gas In Place In Pool (e³m³),
+Pool Area (Ha),1687,,Free Gas - Initial Gas In Place Member Pool (e³m³),
+Multi Mechanics Pool Area (Ha),,,Free Gas - Recovery Factor,0.8
+Average Pay Thickness (m),10,,Free Gas - Initial Producible Gas - In Pool (e³m³),
+Porosity,0.039,,Free Gas - Initial Producible Gas - In Member Pool (e³m³),
+Water Saturation,0.1,,Free Gas - Cumulative Production (e³m³),"142,000"
+Shrinkage,0.71,,Free Gas - Remaining Producible Gas (e³m³),"205,000"
+Initial Gas Gor (m3/m3),127,,Free Gas - Surface Loss,0.15
+Density (Kg/m3),815,,Free Marketable Gas - Initial Gas Reserves In Pool (e³m³),
+Reservoir Temperature (°c),77,,Free Marketable Gas - Initial Gas Reserves In Member Pool (e³m³),
+Initial Pressure(kPa),26843,,Free Marketable Gas - Cumulative Production (e³m³),"121,000"
+,,,Free Marketable Gas - Remaining Reserves (e³m³),"174,000"
+,,,Free Marketable Gas - Gross Heating Value (Mj/M3),42
+,,,Free Marketable Gas - Ghv Code,C
+,,,Free Marketable Gas - Remaining Energy (Tj),7345
+,,,Solution Gas - Initial Oil In Place (e³m³),"4,204,000"
+,,,Solution Gas - Gas Oil Ratio (m3/m3),127
+,,,Solution Gas - Initial Gas In Place In Pool (e³m³),"534,000"
+,,,Solution Gas - Initial Gas In Place In Member Pool (e³m³),
+,,,Solution Gas - Recovery Factor,0.65
+,,,Solution Gas - Initial Producible Gas In Pool (e³m³),"347,000"
+,,,Solution Gas - Initial Producible Gas In Member Pool (e³m³),
+,,,Solution Gas - Cumulative Production (e³m³),
+,,,Solution Gas - Remaining Producible Gas (e³m³),
+,,,Solution Gas - Surface Loss,0.15
+,,,Solution Marketable Gas - Initial Marketable Gas Reserves In Pool (e³m³),"295,000"
+,,,Solution Marketable Gas - Initial Marketable Gas Reserves In Member Pool (e³m³),
+,,,Solution Marketable Gas - Cumulative Markteable Production (e³m³),
+,,,Solution Marketable Gas - Remaining Marketable Gas Reserves (e³m³),
+,,,Solution Marketable Gas - Remaining Energy Content (Tj),
+,,,Area (Ha),
+,,,Average Pay Thickness (m),
+,,,Volume (e³m³),
+,,,Porosity,
+,,,Gas Saturation,
+,,,Initial Pressure (kPa),
+,,,Temperature (°C),
+,,,Compressibility,
+,,,Raw Gas Relative Density,0.8
+,,,M3/M3,
+,,,Gas Water Interface (mss),
+,,,Gas Oil Interface (mss/hvy),
+,,,Mean Formation Depth (KB) (m),"2,341.50"
+,,,Date Last Reviewed,20121206
+,,,Analysis Code,SG
+,,,Discovery Year,1973
+,,,Discovery Well,00/07-29-056-19W5/0
+,,,Formation Top,2337.8
+,,,Formation Base,2345.1
+,,,Kb,1321.3
+,,,Zone Basetype,PB
+,,,Zone,2WS
+,,,Non Conf Conf Status,N
+,,,Assign Iso,I
+,,,Aband Code,N
+,,,Associated,Yes
+,,,Nonassociated,No
+,,,Solution Gas,Yes
