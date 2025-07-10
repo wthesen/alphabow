@@ -1,0 +1,12 @@
+{
+  "timestamp": "20250710_065753",
+  "metrics": {
+    "production_data_coverage": 1.0,
+    "missing_age_data_count": "1",
+    "missing_pressure_data_count": "14",
+    "zero_production_pipelines": 0,
+    "total_wells": 52,
+    "total_pipelines": 111,
+    "data_completeness_score": 0.9662162162162162
+  }
+}

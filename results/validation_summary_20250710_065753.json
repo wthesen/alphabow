@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-07-10T06:57:53.662467",
+  "data_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "uwi_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "parse_success_rate": 1.0
+  },
+  "risk_matrix_validation": {
+    "valid": true,
+    "warnings": [],
+    "missing_entries": [],
+    "recommendations": []
+  },
+  "production_analysis_validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "overall_status": "valid"
+}
