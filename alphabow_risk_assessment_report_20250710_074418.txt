@@ -1,0 +1,40 @@
+ALPHABOW ENERGY LTD. - PIPELINE RISK ASSESSMENT REPORT
+============================================================
+Generated: 2025-07-10 07:44:18
+
+DATA SUMMARY
+--------------------
+well_production: 864 records
+pipelines_list: 111 records
+pipeline_cp_survey: 418 records
+soil_pipe_potentials: 10 records
+gas_analysis_list: 97 records
+well_info: 7 records
+
+RISK LEVEL DISTRIBUTION
+-------------------------
+Medium: 95 assets
+Low: 66 assets
+Critical: 20 assets
+High: 11 assets
+
+TOP 10 HIGHEST RISK ASSETS
+------------------------------
+ 1. AB-33724-9: nan (Critical)
+ 2. AB-51416-2: nan (Critical)
+ 3. 100113105619W502: 12.89 (Critical)
+ 4. AB-17784-2: nan (Critical)
+ 5. 100080705318W502: 5.36 (High)
+ 6. 100021705518W500: 5.05 (High)
+ 7. 100140405518W500: 4.42 (Medium)
+ 8. 100160505518W500: 4.40 (Medium)
+ 9. Pine Creek Area 6: 4.29 (Medium)
+10. AB-59567-1: 3.68 (Medium)
+
+RECOMMENDATIONS
+---------------
+1. Prioritize inspection and maintenance for Critical and High risk assets
+2. Implement enhanced monitoring for assets with high corrosion risk
+3. Review production optimization for wells with high variability
+4. Consider cathodic protection upgrades for high soil corrosivity areas
+5. Implement gas composition monitoring for H2S/CO2 risk management

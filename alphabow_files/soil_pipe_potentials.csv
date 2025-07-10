@@ -1,0 +1,11 @@
+location_id,soil_ph,base_saturation_pct,drainage_ranking,soil_corrosivity_factor,resistivity_ohm_cm,moisture_content_pct,chloride_mg_l,sulfate_mg_l,external_corrosion_potential
+Pine Creek Area 1,4.5,65,3,6.5,1200,15,120,85,Medium
+Pine Creek Area 2,5.2,72,4,5.8,1800,12,95,65,Low-Medium
+Pine Creek Area 3,4.8,58,3,7.2,980,18,150,95,Medium-High
+Pine Creek Area 4,5.5,78,4,5.2,2200,10,80,55,Low
+Pine Creek Area 5,4.2,52,2,8.1,750,22,180,115,High
+Pine Creek Area 6,5.0,68,3,6.0,1500,14,110,75,Medium
+Pine Creek Area 7,4.6,61,3,6.8,1100,16,135,88,Medium-High
+Pine Creek Area 8,5.3,75,4,5.5,2000,11,90,60,Low-Medium
+Pine Creek Area 9,4.4,55,2,7.5,850,20,165,105,High
+Pine Creek Area 10,5.1,70,4,5.9,1650,13,105,70,Low-Medium
