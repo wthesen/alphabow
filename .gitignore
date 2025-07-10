@@ -1,0 +1,31 @@
+# CP Restoration Priority Assessment - Generated Files and Outputs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated output files (keep results but ignore temp outputs)
+*.backup
+*_backup.*
+
+# Don't ignore the critical assessment results
+!cp_restoration_priority_results.csv
+!CP_RESTORATION_EXECUTIVE_SUMMARY.md
