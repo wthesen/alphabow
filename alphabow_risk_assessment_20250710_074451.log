@@ -1,0 +1,3 @@
+2025-07-10 07:44:51,210 - INFO - Starting Alphabow Risk Assessment V3...
+2025-07-10 07:44:51,210 - INFO - Loading data files from alphabow_files
+2025-07-10 07:44:51,210 - ERROR - Risk assessment failed: Required file 'well_production.csv' not found in alphabow_files
